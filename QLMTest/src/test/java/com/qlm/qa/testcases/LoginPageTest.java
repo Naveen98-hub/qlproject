@@ -6,19 +6,20 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.qlm.qa.base.TestBase;
+import com.qlm.qa.pages.HomePage;
 import com.qlm.qa.pages.LoginPage;
 
 public class LoginPageTest extends TestBase
 {
 	LoginPage loginpage;
+	HomePage homePage;
 	
 	
 	public LoginPageTest()
 	{
 		super();
 	}
-	
-	
+		
 	@BeforeMethod
     public void setup()
     {
@@ -27,7 +28,7 @@ public class LoginPageTest extends TestBase
 	   
     }
 	
-	@Test
+	@Test(priority=1)
 	public void loginPageTitle()
 	{
 		String pagetitle=loginpage.validateLoginPageTitle();
@@ -36,7 +37,25 @@ public class LoginPageTest extends TestBase
 		
 	}
 	
+	@Test(priority=2)
+	public void empowerlogotest()
+	{
+		Boolean flag=loginpage.validateEmpowerLogo();
+		Assert.assertTrue(flag);
+		System.out.println("logo matching");
+	}
 	
+	@Test(enabled=false)
+	public void captchaTest()
+	{
+		loginpage.captcha();
+	}
+	
+	@Test(priority=3)
+	public void login() throws InterruptedException
+	{
+		homePage=loginpage.login(prop.getProperty("username"),prop.getProperty("password"));
+	}
 	
    @AfterMethod
    public void teardown()

@@ -1,21 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="1" total="4" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12243" started-at="2019-11-13T12:46:16Z" finished-at="2019-11-13T12:46:28Z">
+  <suite name="Default suite" duration-ms="56591" started-at="2019-11-13T14:30:42Z" finished-at="2019-11-13T14:31:39Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12243" started-at="2019-11-13T12:46:16Z" finished-at="2019-11-13T12:46:28Z">
+    <test name="Default test" duration-ms="56591" started-at="2019-11-13T14:30:42Z" finished-at="2019-11-13T14:31:39Z">
       <class name="com.qlm.qa.testcases.LoginPageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.qlm.qa.testcases.LoginPageTest@53b32d7]" name="setup" is-config="true" duration-ms="11158" started-at="2019-11-13T18:16:16Z" finished-at="2019-11-13T18:16:27Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qlm.qa.testcases.LoginPageTest@53b32d7]" name="setup" is-config="true" duration-ms="11947" started-at="2019-11-13T20:00:42Z" finished-at="2019-11-13T20:00:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginPageTitle()[pri:0, instance:com.qlm.qa.testcases.LoginPageTest@53b32d7]" name="loginPageTitle" duration-ms="23" started-at="2019-11-13T18:16:27Z" finished-at="2019-11-13T18:16:27Z">
+        <test-method status="PASS" signature="loginPageTitle()[pri:1, instance:com.qlm.qa.testcases.LoginPageTest@53b32d7]" name="loginPageTitle" duration-ms="26" started-at="2019-11-13T20:00:54Z" finished-at="2019-11-13T20:00:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTitle -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.qlm.qa.testcases.LoginPageTest@53b32d7]" name="teardown" is-config="true" duration-ms="1044" started-at="2019-11-13T18:16:27Z" finished-at="2019-11-13T18:16:28Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.qlm.qa.testcases.LoginPageTest@53b32d7]" name="teardown" is-config="true" duration-ms="933" started-at="2019-11-13T20:00:54Z" finished-at="2019-11-13T20:00:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qlm.qa.testcases.LoginPageTest@53b32d7]" name="setup" is-config="true" duration-ms="10627" started-at="2019-11-13T20:00:55Z" finished-at="2019-11-13T20:01:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="empowerlogotest()[pri:2, instance:com.qlm.qa.testcases.LoginPageTest@53b32d7]" name="empowerlogotest" duration-ms="43" started-at="2019-11-13T20:01:06Z" finished-at="2019-11-13T20:01:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- empowerlogotest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.qlm.qa.testcases.LoginPageTest@53b32d7]" name="teardown" is-config="true" duration-ms="811" started-at="2019-11-13T20:01:06Z" finished-at="2019-11-13T20:01:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qlm.qa.testcases.LoginPageTest@53b32d7]" name="setup" is-config="true" duration-ms="14144" started-at="2019-11-13T20:01:06Z" finished-at="2019-11-13T20:01:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="login()[pri:3, instance:com.qlm.qa.testcases.LoginPageTest@53b32d7]" name="login" duration-ms="17138" started-at="2019-11-13T20:01:21Z" finished-at="2019-11-13T20:01:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.qlm.qa.testcases.LoginPageTest@53b32d7]" name="teardown" is-config="true" duration-ms="900" started-at="2019-11-13T20:01:38Z" finished-at="2019-11-13T20:01:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

@@ -50,14 +50,15 @@ public class LoginPage extends TestBase
 	{
 		String capt=captchamain.getText();
 		System.out.println(capt);
-		captchainput.sendKeys(capt);	
+		captchainput.sendKeys("1234");	
 	
 	}
 	
-	public HomePage login(String user, String pass)
+	public HomePage login(String user, String pass) throws InterruptedException
 	{
 		username.sendKeys(user);
 		password.sendKeys(pass);
+		Thread.sleep(10000);
 		signin.click();
 		
 		return new HomePage();
