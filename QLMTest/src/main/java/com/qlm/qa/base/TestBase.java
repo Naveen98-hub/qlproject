@@ -22,7 +22,8 @@ public class TestBase
 		   try
 		   {
 		       prop =new Properties();
-		       FileInputStream ip= new FileInputStream("D:\\JavaWorkspace\\QLMTEST\\src\\main\\java\\com\\qlm\\qa\\config\\config.properties");
+		       FileInputStream ip= new FileInputStream("C:\\Users\\nk4.RGBSIGTC\\git\\qlproject\\QLMTest\\src\\main\\java"
+		       		+ "\\com\\qlm\\qa\\config\\config.properties");
 		   
 		       prop.load(ip);
 		   

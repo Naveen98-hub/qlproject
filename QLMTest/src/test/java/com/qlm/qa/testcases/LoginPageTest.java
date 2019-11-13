@@ -32,6 +32,7 @@ public class LoginPageTest extends TestBase
 	{
 		String pagetitle=loginpage.validateLoginPageTitle();
 		Assert.assertEquals(pagetitle, "Log in - QLM");
+		System.out.println("Page Title is:"+ pagetitle);
 		
 	}
 	
