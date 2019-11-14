@@ -29,7 +29,7 @@ public class LoginPageTest extends TestBase
     }
 	
 	@Test(priority=1)
-	public void loginPageTitle()
+	public void loginPageTitleTest()
 	{
 		String pagetitle=loginpage.validateLoginPageTitle();
 		Assert.assertEquals(pagetitle, "Log in - QLM");
@@ -38,7 +38,7 @@ public class LoginPageTest extends TestBase
 	}
 	
 	@Test(priority=2)
-	public void empowerlogotest()
+	public void empowerLogoTest()
 	{
 		Boolean flag=loginpage.validateEmpowerLogo();
 		Assert.assertTrue(flag);
@@ -52,7 +52,7 @@ public class LoginPageTest extends TestBase
 	}
 	
 	@Test(priority=3)
-	public void login() throws InterruptedException
+	public void loginTest() throws InterruptedException
 	{
 		homePage=loginpage.login(prop.getProperty("username"),prop.getProperty("password"));
 	}
