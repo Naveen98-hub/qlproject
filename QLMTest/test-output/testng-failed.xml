@@ -3,15 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.qlm.qa.testcases.HomePageTest">
+      <class name="com.qlm.qa.testcases.PPAPWorkflowTemplatePageTest">
         <methods>
-          <include name="setup"/>
-          <include name="verifyUserNameTest"/>
-          <include name="clickOnPPAPTemplateTest"/>
-          <include name="homePageTitleTest"/>
           <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="validateCreatePPAPTemplate" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.qlm.qa.testcases.HomePageTest -->
+      </class> <!-- com.qlm.qa.testcases.PPAPWorkflowTemplatePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
