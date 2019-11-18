@@ -7,7 +7,7 @@
         <methods>
           <include name="tearDown"/>
           <include name="setup"/>
-          <include name="validateCreatePPAPTemplate" invocation-numbers="0"/>
+          <include name="validateEditPPAPTemplate"/>
         </methods>
       </class> <!-- com.qlm.qa.testcases.PPAPWorkflowTemplatePageTest -->
     </classes>

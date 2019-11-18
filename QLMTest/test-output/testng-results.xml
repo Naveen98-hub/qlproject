@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="62829" started-at="2019-11-15T14:40:12Z" finished-at="2019-11-15T14:41:15Z">
+  <suite name="Default suite" duration-ms="144982" started-at="2019-11-18T13:35:43Z" finished-at="2019-11-18T13:38:08Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="62829" started-at="2019-11-15T14:40:12Z" finished-at="2019-11-15T14:41:15Z">
+    <test name="Default test" duration-ms="144982" started-at="2019-11-18T13:35:43Z" finished-at="2019-11-18T13:38:08Z">
       <class name="com.qlm.qa.testcases.PPAPWorkflowTemplatePageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.qlm.qa.testcases.PPAPWorkflowTemplatePageTest@548e7350]" name="setup" is-config="true" duration-ms="28956" started-at="2019-11-15T20:10:12Z" finished-at="2019-11-15T20:10:41Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qlm.qa.testcases.PPAPWorkflowTemplatePageTest@548e7350]" name="setup" is-config="true" duration-ms="31872" started-at="2019-11-18T19:05:43Z" finished-at="2019-11-18T19:06:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="ppapTemplatePageTitleTest()[pri:1, instance:com.qlm.qa.testcases.PPAPWorkflowTemplatePageTest@548e7350]" name="ppapTemplatePageTitleTest" duration-ms="14" started-at="2019-11-15T20:10:41Z" finished-at="2019-11-15T20:10:41Z">
+        <test-method status="PASS" signature="ppapTemplatePageTitleTest()[pri:1, instance:com.qlm.qa.testcases.PPAPWorkflowTemplatePageTest@548e7350]" name="ppapTemplatePageTitleTest" duration-ms="13" started-at="2019-11-18T19:06:15Z" finished-at="2019-11-18T19:06:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ppapTemplatePageTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qlm.qa.testcases.PPAPWorkflowTemplatePageTest@548e7350]" name="tearDown" is-config="true" duration-ms="863" started-at="2019-11-15T20:10:41Z" finished-at="2019-11-15T20:10:42Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qlm.qa.testcases.PPAPWorkflowTemplatePageTest@548e7350]" name="tearDown" is-config="true" duration-ms="1353" started-at="2019-11-18T19:06:15Z" finished-at="2019-11-18T19:06:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.qlm.qa.testcases.PPAPWorkflowTemplatePageTest@548e7350]" name="setup" is-config="true" duration-ms="28085" started-at="2019-11-15T20:10:42Z" finished-at="2019-11-15T20:11:10Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qlm.qa.testcases.PPAPWorkflowTemplatePageTest@548e7350]" name="setup" is-config="true" duration-ms="26879" started-at="2019-11-18T19:06:17Z" finished-at="2019-11-18T19:06:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="validateCreatePPAPTemplate(java.lang.String, java.lang.String)[pri:2, instance:com.qlm.qa.testcases.PPAPWorkflowTemplatePageTest@548e7350]" name="validateCreatePPAPTemplate" duration-ms="3436" started-at="2019-11-15T20:11:10Z" data-provider="getPPAPTestData" finished-at="2019-11-15T20:11:14Z">
+        <test-method status="PASS" signature="validateCreatePPAPTemplate(java.lang.String, java.lang.String)[pri:2, instance:com.qlm.qa.testcases.PPAPWorkflowTemplatePageTest@548e7350]" name="validateCreatePPAPTemplate" duration-ms="3558" started-at="2019-11-18T19:06:44Z" data-provider="getPPAPTestData" finished-at="2019-11-18T19:06:47Z">
           <params>
             <param index="0">
               <value>
@@ -39,7 +39,31 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateCreatePPAPTemplate -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qlm.qa.testcases.PPAPWorkflowTemplatePageTest@548e7350]" name="tearDown" is-config="true" duration-ms="1017" started-at="2019-11-15T20:11:14Z" finished-at="2019-11-15T20:11:15Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qlm.qa.testcases.PPAPWorkflowTemplatePageTest@548e7350]" name="tearDown" is-config="true" duration-ms="1419" started-at="2019-11-18T19:06:47Z" finished-at="2019-11-18T19:06:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qlm.qa.testcases.PPAPWorkflowTemplatePageTest@548e7350]" name="setup" is-config="true" duration-ms="27418" started-at="2019-11-18T19:06:49Z" finished-at="2019-11-18T19:07:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateEditPPAPTemplate()[pri:3, instance:com.qlm.qa.testcases.PPAPWorkflowTemplatePageTest@548e7350]" name="validateEditPPAPTemplate" duration-ms="7827" started-at="2019-11-18T19:07:16Z" finished-at="2019-11-18T19:07:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateEditPPAPTemplate -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qlm.qa.testcases.PPAPWorkflowTemplatePageTest@548e7350]" name="tearDown" is-config="true" duration-ms="1052" started-at="2019-11-18T19:07:24Z" finished-at="2019-11-18T19:07:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qlm.qa.testcases.PPAPWorkflowTemplatePageTest@548e7350]" name="setup" is-config="true" duration-ms="34324" started-at="2019-11-18T19:07:25Z" finished-at="2019-11-18T19:07:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateViewTemplate()[pri:4, instance:com.qlm.qa.testcases.PPAPWorkflowTemplatePageTest@548e7350]" name="validateViewTemplate" duration-ms="7716" started-at="2019-11-18T19:07:59Z" finished-at="2019-11-18T19:08:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateViewTemplate -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qlm.qa.testcases.PPAPWorkflowTemplatePageTest@548e7350]" name="tearDown" is-config="true" duration-ms="1093" started-at="2019-11-18T19:08:07Z" finished-at="2019-11-18T19:08:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

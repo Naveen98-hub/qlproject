@@ -27,10 +27,18 @@ public class PPAPWorkflowTemplatePage extends TestBase
    @FindBy(id="modal-confirmation-cancel")
    WebElement templateCreatecancelButton;
    
+   @FindBy(xpath = "(//button[contains(.,'Action')])[1]")
+   WebElement templateListPageActionButton;
    
+   @FindBy(xpath="//html/body/div[1]/div/div[3]/div/div/table/tbody/tr[1]/td[4]/div/ul/li[1]/a/span")
+   WebElement editTemplateButton;
    
+   @FindBy(xpath="//html/body/div[1]/div/div[3]/div/div/table/tbody/tr[1]/td[4]/div/ul/li[2]/a/span")
+   WebElement viewTemplateButton;
    
-   
+   @FindBy(xpath = "//button[@id='modal-confirmation-ok' and @class='btn btn-primary']")
+   WebElement templateUpdateButton;
+
    
    //Actions
 	
@@ -56,9 +64,27 @@ public class PPAPWorkflowTemplatePage extends TestBase
 	   Select sel = new Select(submissionLevel);
 	   sel.selectByVisibleText(subLevel);
 	   //templateCreateButton.click();
-	   
    }
    
+   public void updateTemplate() throws InterruptedException
+   {
+	   Thread.sleep(2500);
+	   templateListPageActionButton.click();
+	   Thread.sleep(2500);
+	   editTemplateButton.click();
+	   Thread.sleep(2500);
+	  templateUpdateButton.click();
+   }
+   
+   public PPAPSingleTemplatePage viewTemplate() throws InterruptedException
+   {
+	   Thread.sleep(2500);
+	   templateListPageActionButton.click();
+	   Thread.sleep(2500);
+	   viewTemplateButton.click();
+	   return new PPAPSingleTemplatePage();
+	   
+   }
    
    
    

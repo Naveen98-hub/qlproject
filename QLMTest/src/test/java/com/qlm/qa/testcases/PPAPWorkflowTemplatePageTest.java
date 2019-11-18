@@ -58,6 +58,19 @@ public class PPAPWorkflowTemplatePageTest extends TestBase
 		ppapworkflowtemplatepage.createNewTemplate(tempName, subLevel);
 	}
 	
+	@Test(priority=3)
+	public void validateEditPPAPTemplate() throws InterruptedException
+	{
+		ppapworkflowtemplatepage.updateTemplate();
+		
+	}
+	
+	@Test(priority=4)
+	public void validateViewTemplate() throws InterruptedException
+	{
+		ppapworkflowtemplatepage.viewTemplate();
+	}
+	
 	
 	
 	 @AfterMethod

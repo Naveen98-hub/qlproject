@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\nk4.RGBSIGTC\AppData\Local\Temp\testng-eclipse--818589510\testng-customsuite.xml</span>
+                    <span>C:\Users\nk4.RGBSIGTC\AppData\Local\Temp\testng-eclipse--611868751\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -108,6 +108,16 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.qlm.qa.testcases.PPAPWorkflowTemplatePageTest" hash-for-method="validateCreatePPAPTemplate(SamplePPAP, Level 03)">validateCreatePPAPTemplate(SamplePPAP, Level 03)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.qlm.qa.testcases.PPAPWorkflowTemplatePageTest" hash-for-method="validateEditPPAPTemplate">validateEditPPAPTemplate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.qlm.qa.testcases.PPAPWorkflowTemplatePageTest" hash-for-method="validateViewTemplate">validateViewTemplate</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -143,12 +153,26 @@
                   <span class="parameters">(SamplePPAP, Level 03)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateEditPPAPTemplate">
+                  </a> <!-- validateEditPPAPTemplate -->
+                  <span class="method-name">validateEditPPAPTemplate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateViewTemplate">
+                  </a> <!-- validateViewTemplate -->
+                  <span class="method-name">validateViewTemplate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\nk4.RGBSIGTC\AppData\Local\Temp\testng-eclipse--818589510\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\nk4.RGBSIGTC\AppData\Local\Temp\testng-eclipse--611868751\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -197,20 +221,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validateCreatePPAPTemplate')
+data.setCell(0, 1, 'validateEditPPAPTemplate')
 data.setCell(0, 2, 'com.qlm.qa.testcases.PPAPWorkflowTemplatePageTest')
-data.setCell(0, 3, 3436);
+data.setCell(0, 3, 7827);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'ppapTemplatePageTitleTest')
+data.setCell(1, 1, 'validateViewTemplate')
 data.setCell(1, 2, 'com.qlm.qa.testcases.PPAPWorkflowTemplatePageTest')
-data.setCell(1, 3, 14);
+data.setCell(1, 3, 7716);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'validateCreatePPAPTemplate')
+data.setCell(2, 2, 'com.qlm.qa.testcases.PPAPWorkflowTemplatePageTest')
+data.setCell(2, 3, 3558);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'ppapTemplatePageTitleTest')
+data.setCell(3, 2, 'com.qlm.qa.testcases.PPAPWorkflowTemplatePageTest')
+data.setCell(3, 3, 13);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 19 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -243,23 +275,47 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">ppapTemplatePageTitleTest</span>
-                <span class="method-start">28956 ms</span>
+                <span class="method-start">31872 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">28971 ms</span>
+                <span class="method-start">31886 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">30275 ms</span>
+                <span class="method-start">33676 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateCreatePPAPTemplate(SamplePPAP, Level 03)</span>
-                <span class="method-start">58360 ms</span>
+                <span class="method-start">60555 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">61797 ms</span>
+                <span class="method-start">64114 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">65533 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateEditPPAPTemplate</span>
+                <span class="method-start">92951 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">100779 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">101832 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateViewTemplate</span>
+                <span class="method-start">136156 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">143873 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
