@@ -3,13 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.qlm.qa.testcases.PPAPWorkflowTemplatePageTest">
+      <class name="com.qlm.qa.testcases.PPAPRequestCreatePageTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="validateEditPPAPTemplate"/>
+          <include name="setUp"/>
+          <include name="validatePPAPRequestCreate" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.qlm.qa.testcases.PPAPWorkflowTemplatePageTest -->
+      </class> <!-- com.qlm.qa.testcases.PPAPRequestCreatePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

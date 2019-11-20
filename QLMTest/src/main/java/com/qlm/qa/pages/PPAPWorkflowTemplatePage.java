@@ -59,7 +59,6 @@ public class PPAPWorkflowTemplatePage extends TestBase
 
    public void createNewTemplate(String tempName, String subLevel)
    {
-	   //Thread.sleep(1500);
 	   templateName.sendKeys(tempName);
 	   Select sel = new Select(submissionLevel);
 	   sel.selectByVisibleText(subLevel);
@@ -73,7 +72,7 @@ public class PPAPWorkflowTemplatePage extends TestBase
 	   Thread.sleep(2500);
 	   editTemplateButton.click();
 	   Thread.sleep(2500);
-	  templateUpdateButton.click();
+	   templateUpdateButton.click();
    }
    
    public PPAPSingleTemplatePage viewTemplate() throws InterruptedException

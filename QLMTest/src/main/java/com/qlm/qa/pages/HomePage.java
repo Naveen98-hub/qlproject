@@ -13,11 +13,17 @@ public class HomePage extends TestBase
 	@FindBy(xpath="(//span[contains(text(),'PPAP')])[1]")
 	WebElement ppapSpan;
 	
+    @FindBy(xpath="//a[contains(text(),'Norman Hemmings(admin)')]")
+    WebElement userNameLable;
+    
 	@FindBy(xpath="//a[@title='Navigate to PPAP Workflow Template']")
 	WebElement ppapTempleteLink;
 	
-    @FindBy(xpath="//a[contains(text(),'Norman Hemmings(admin)')]")
-    WebElement userNameLable;
+	@FindBy(xpath="//a[@title='Navigate to PPAP Workflow']")
+	WebElement ppapRequestLink;
+	
+	
+    
 	
 	//Actions
 	
@@ -29,15 +35,13 @@ public class HomePage extends TestBase
 	public String validateHomePageTitle()
 	{
 		return driver.getTitle();
-						
-	}
+    }
 	
 	public boolean validateUserLable()
 	{
 		return userNameLable.isDisplayed();
 	}
-	
-	
+
 	public PPAPWorkflowTemplatePage clickOnPPAPTemplete()
 	{
 		ppapSpan.click();
@@ -45,6 +49,15 @@ public class HomePage extends TestBase
 		return new PPAPWorkflowTemplatePage();
 	}
 	
-	
+	public PPAPWorkFlowRequestPage clickOnPPAPRequest() throws InterruptedException
+	{
+		ppapSpan.click();
+		Thread.sleep(1000);
+		ppapRequestLink.click();
+		return new PPAPWorkFlowRequestPage();
+	}
 
+	
+	
+	
 }

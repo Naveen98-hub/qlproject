@@ -26,7 +26,7 @@ public class PPAPWorkflowTemplatePageTest extends TestBase
 	}
 	
 	@BeforeMethod
-	public void setup() throws InterruptedException
+	public void setUp() throws InterruptedException
 	{
 		initialize();
 		loginpage = new LoginPage();
@@ -70,9 +70,7 @@ public class PPAPWorkflowTemplatePageTest extends TestBase
 	{
 		ppapworkflowtemplatepage.viewTemplate();
 	}
-	
-	
-	
+
 	 @AfterMethod
 	 public void tearDown()
 	 {
