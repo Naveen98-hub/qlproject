@@ -45,12 +45,6 @@ public class LoginPageTest extends TestBase
 		System.out.println("logo matching");
 	}
 	
-	@Test(enabled=false)
-	public void captchaTest()
-	{
-		loginpage.captcha();
-	}
-	
 	@Test(priority=3)
 	public void loginTest() throws InterruptedException
 	{
@@ -58,7 +52,7 @@ public class LoginPageTest extends TestBase
 	}
 	
    @AfterMethod
-   public void teardown()
+   public void tearDown()
    {
 	   driver.quit();
 	   

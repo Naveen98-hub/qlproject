@@ -28,7 +28,6 @@ public class PPAPAmendPageTest extends TestBase
 	public void setUp()
 	{
 		initialize();
-		
 	}
 	
 	void beforeMethodForSupplier() throws InterruptedException
@@ -39,7 +38,7 @@ public class PPAPAmendPageTest extends TestBase
 		ppapamendpage=ppapworkflowrequestpage.ppapAmend();
 	}
 
-	@Test(priority=1)
+	@Test(priority=2)
 	public void validatePPAPSubmit() throws InterruptedException, AWTException
 	{
 		beforeMethodForSupplier();
@@ -54,7 +53,7 @@ public class PPAPAmendPageTest extends TestBase
 		ppapamendpage=ppapworkflowrequestpage.ppapAmend();
 	}
 	
-	@Test(priority=2)
+	@Test(priority=3)
 	public void validatePPAPReview() throws InterruptedException, AWTException
 	{
 		beforeMethodForReviewer();
@@ -69,7 +68,7 @@ public class PPAPAmendPageTest extends TestBase
 		ppapamendpage=ppapworkflowrequestpage.ppapAmend();
 	}
 	
-	@Test(priority=3)
+	@Test(priority=4)
 	public void validatePPAPApprove() throws InterruptedException, AWTException
 	{
 		beforeMethodForApprover();
@@ -77,7 +76,7 @@ public class PPAPAmendPageTest extends TestBase
 	}
 	
 	@AfterMethod
-	public void teardown()
+	public void tearDown()
 	 {
 	   driver.quit();
 	   

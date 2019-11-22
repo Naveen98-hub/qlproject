@@ -62,7 +62,7 @@ public class PPAPRequestCreatePageTest extends TestBase
 	}
 	
 	@AfterMethod
-	public void teardown()
+	public void tearDown()
 	 {
 	   driver.quit();
 	   
