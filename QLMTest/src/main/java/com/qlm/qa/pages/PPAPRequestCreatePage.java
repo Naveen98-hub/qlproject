@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.qlm.qa.base.TestBase;
+import com.qlm.qa.util.TestUtil;
 
 public class PPAPRequestCreatePage extends TestBase
 {
@@ -59,8 +60,14 @@ public class PPAPRequestCreatePage extends TestBase
 	@FindBy(xpath = "(//span[@unselectable='on'][contains(.,'Select Template')])[3]")
 	WebElement template;
 	
-	@FindBy(xpath = "//input[contains(@value,'Submit Request')]")
+	@FindBy(xpath = "//input[@id='btn-submit-form']")
 	WebElement submitRequest;
+	
+	@FindBy(xpath="//input[@id='btn-draft-form']")
+	WebElement saveDraft;
+	
+	@FindBy(xpath="//a[@class='btn btn-default'][contains(.,'Back')]")
+	WebElement backButton;
 	
 	//Actions
 	
@@ -69,12 +76,13 @@ public class PPAPRequestCreatePage extends TestBase
 		PageFactory.initElements(driver, this);
 	}
 	
-	public String validatePPAPRequestCreatePageTitle()
+	public String ppapRequestCreatePageTitle()
 	{
 		return driver.getTitle();
 	}
 	
-	public void ppapRequestCreate(String pNo,String oCstmr,String ppapR) throws InterruptedException
+	public PPAPWorkFlowRequestPage ppapRequestCreate(String pNo,String oCstmr,String ppapR,String tLocn,String tPlant,String tPgm,String tBsUnit,
+			String tPPAPRev,String tPPAPApr,String tSupplier,String tSupCoord,String tSupLoc,String tTemplate) throws InterruptedException
 	{
 		String tpNo = pNo.substring(0, pNo.indexOf('.'));
 		part.click();
@@ -88,7 +96,51 @@ public class PPAPRequestCreatePage extends TestBase
 		ppapReason.click();
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//li[contains(text(),'"+ppapR+"')]")).click();
+		Thread.sleep(1000);
+		location.click();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//li[contains(text(),'"+tLocn+"')]")).click();
+		Thread.sleep(1000);
+		plant.click();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//li[contains(text(),'"+tPlant+"')]")).click();
+		Thread.sleep(1000);
+		program.click();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//li[contains(text(),'"+tPgm+"')]")).click();
+		Thread.sleep(1000);
+		businessUnit.click();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//li[contains(text(),'"+tBsUnit+"')]")).click();
+		Thread.sleep(1000);
+		ppapReviewer.click();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//h3[contains(text(),'"+tPPAPRev+"')]")).click();
+		Thread.sleep(1000);
+		ppapApprover.click();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("(//h3[contains(text(),'"+tPPAPApr+"')])[2]")).click();
+		Thread.sleep(1000);
+		supplier.click();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//li[contains(text(),'"+tSupplier+"')]")).click();
+		Thread.sleep(1000);
+		supplierCoordinator.click();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//li[contains(text(),'"+tSupCoord+"')]")).click();
+		Thread.sleep(1000);
+		supplierLocation.click();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//li[contains(text(),'"+tSupLoc+"')]")).click();
+		Thread.sleep(1000);
+		template.click();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//li[contains(text(),'"+tTemplate+"')]")).click();
+		Thread.sleep(3000);
+		TestUtil.moveAction(submitRequest);
+		Thread.sleep(1500);
 		
+		return new PPAPWorkFlowRequestPage();
 	}
 	
 	

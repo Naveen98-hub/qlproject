@@ -15,10 +15,12 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import com.qlm.qa.base.TestBase;
 
 
 
-public class TestUtil
+public class TestUtil extends TestBase
 {
 
 	public static long PAGE_LOAD_TIMEOUT=30;
@@ -92,8 +94,17 @@ public class TestUtil
 		robot.keyRelease(KeyEvent.VK_ENTER);
 		
 		System.out.println("File Uploaded");
-		
 	}
+	
+	public static void moveAction(WebElement element)
+	 {
+
+		 Actions action = new Actions(driver);
+
+       action.moveToElement(element).click().perform();
+	
+	 }
+
 	
 	
 }

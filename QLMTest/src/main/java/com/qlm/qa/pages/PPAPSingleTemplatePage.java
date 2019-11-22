@@ -3,7 +3,6 @@ package com.qlm.qa.pages;
 import java.awt.AWTException;
 
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -53,8 +52,6 @@ public class PPAPSingleTemplatePage extends TestBase
 	
 	//Actions
 	
-	Actions act= new Actions(driver);
-	
 	public PPAPSingleTemplatePage()
 	{
 		PageFactory.initElements(driver, this);
@@ -86,8 +83,8 @@ public class PPAPSingleTemplatePage extends TestBase
 		elementAbbreviation.sendKeys(ppapElementAbbreviation);
 		Thread.sleep(1000);
 		TestUtil.fileUpload(fileUpload);
-		//Actions act= new Actions(driver);
-		//act.moveToElement(elementCreateButton).click().perform();
+		Thread.sleep(1000);
+		TestUtil.moveAction(elementCreateButton);
 				
 	}
 	
@@ -95,8 +92,7 @@ public class PPAPSingleTemplatePage extends TestBase
 	{
 		editElementButton.click();
 		Thread.sleep(1500);
-		//Actions act= new Actions(driver);
-		act.moveToElement(updateElementButton).click().perform();
+		TestUtil.moveAction(updateElementButton);
 	 }
 	
 	public void viewElementChecklist() throws InterruptedException

@@ -51,6 +51,7 @@ public class HomePage extends TestBase
 	
 	public PPAPWorkFlowRequestPage clickOnPPAPRequest() throws InterruptedException
 	{
+		Thread.sleep(1000);
 		ppapSpan.click();
 		Thread.sleep(1000);
 		ppapRequestLink.click();
