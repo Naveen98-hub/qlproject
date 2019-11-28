@@ -23,8 +23,8 @@ import com.qlm.qa.base.TestBase;
 public class TestUtil extends TestBase
 {
 
-	public static long PAGE_LOAD_TIMEOUT=30;
-	public static long IMPLICIT_WAIT=30;
+	public static long PAGE_LOAD_TIMEOUT=50;
+	public static long IMPLICIT_WAIT=50;
 	
 	
 	static Workbook book;
@@ -32,7 +32,7 @@ public class TestUtil extends TestBase
 	public static DataFormatter formatter= new DataFormatter();
 	
 	public static String TESTDATA_SHEET_PATH="C:\\Users\\nk4.RGBSIGTC\\git\\qlproject\\QLMTest\\src\\"
-			+ "main\\java\\com\\qlm\\qa\\testdata\\PPAPTestData.xlsx";
+			+ "main\\java\\com\\qlm\\qa\\testdata\\QLMTestData.xlsx";
 	
 	
 	public static Object[][] getTestData(String sheetName)

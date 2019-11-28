@@ -71,11 +71,11 @@ public class PPAPWorkflowTemplatePageTest extends TestBase
 		ppapworkflowtemplatepage.viewTemplate();
 	}
 
-	 @AfterMethod
-	 public void tearDown()
-	 {
+	@AfterMethod
+	public void tearDown()
+	{
 	   driver.quit();
-	 }
+	}
 	
 
 }

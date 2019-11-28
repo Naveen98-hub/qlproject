@@ -37,8 +37,8 @@ public class PPAPRequestCreatePageTest extends TestBase
 		ppaprequestcreatepage=ppapworkflowrequestpage.clickOnCreateNewPPAPRequestButton();
 	}
 	
-	@Test(priority=1)
-	public void validatePPAPSingleTemplatePageTitleTest()
+	//@Test(priority=1)
+	public void validatePPAPRequestCreatePageTitleTest()
 	{
 		String pagetitle=ppaprequestcreatepage.ppapRequestCreatePageTitle();
 		Assert.assertEquals(pagetitle, "PPAP Request Create - QLM");
