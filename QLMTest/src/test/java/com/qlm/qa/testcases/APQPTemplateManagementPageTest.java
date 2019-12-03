@@ -50,20 +50,20 @@ public class APQPTemplateManagementPageTest extends TestBase
 	}
 	
 	@Test(priority=2,dataProvider="getAPQPTestData")
-	public void validateCreateAPQPTemplate(String tempName) throws InterruptedException
+	public void validateCreateAPQPTemplateTest(String tempName) throws InterruptedException
 	{
 		apqptemplatemanagementpage.clickOnCreateNewTemplateButton();
 		apqptemplatemanagementpage.createNewAPQPTemplate(tempName);
 	}
 	
 	@Test(priority=3)
-	public void validateEditAPQPTemplate() throws InterruptedException
+	public void validateEditAPQPTemplateTest() throws InterruptedException
 	{
 		apqptemplatemanagementpage.editAPQPTemplate();
 	}
 	
 	@Test(priority=4)
-	public void validateViewAPQPTemplate() throws InterruptedException
+	public void validateViewAPQPTemplateTest() throws InterruptedException
 	{
 		apqptemplatemanagementpage.viewAPQPTemplate();
 	}

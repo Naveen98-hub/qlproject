@@ -63,7 +63,7 @@ public class APQPTemplateManagementPage extends TestBase
 
 	public void editAPQPTemplate() throws InterruptedException
 	{
-		Thread.sleep(1900);
+		Thread.sleep(4000);
 		templateListActionButton.click();
 		Thread.sleep(1000);
 		templateEdit.click();
