@@ -22,6 +22,7 @@ public class APQPTemplateDetailPlanPageTest extends TestBase
 	APQPTemplateDetailPlanPage apqptemplatedetailplanpage;
 	
 	String sheetName="APQPTempPlanData";
+	String sheetNameBOM="APQPTempBOMRole";
 	
 	Logger log = Logger.getLogger(APQPTemplateDetailPlanPageTest.class);
 			
@@ -61,20 +62,36 @@ public class APQPTemplateDetailPlanPageTest extends TestBase
 	}
 
 	@Test(priority=2,dataProvider="getAPQPTestData")
-	public void createAPQPTemplateTest(String pTitle,String pSequence,String preElem,String preSequence,String preReqActName,String preReqSeqNo,
+	public void createAPQPTemplateTest(String pTitle,String pSequence,String phaseNo,String preElem,String preSequence,String preReqActName,String preReqSeqNo,
 			String PreReqRole,String taskElement,String tSeqNo,String tActivity,String tSequence,String leadRole,String teamRole,
-			String mileStName,String mileStSeq) throws InterruptedException
+			String mileStName,String mileStSeq,String mileStAuthRole,String eNo) throws InterruptedException
 	{
 		log.info("********* createAPQPTemplateTest Execution Started *********");
 		
 		apqptemplatedetailplanpage.createPhase(pTitle, pSequence);
-		apqptemplatedetailplanpage.createPrerequisities(preElem, preSequence);
+		apqptemplatedetailplanpage.createPrerequisities(preElem, preSequence,phaseNo);
 		apqptemplatedetailplanpage.createPreReqActivity(preReqActName, preReqSeqNo,PreReqRole);
 		apqptemplatedetailplanpage.createTaskElement(taskElement, tSeqNo);
 		apqptemplatedetailplanpage.createTaskActivity(tActivity, tSequence, leadRole,teamRole);
 		apqptemplatedetailplanpage.createMilestoneGateReview(mileStName, mileStSeq);
+		apqptemplatedetailplanpage.editMilestoneGateReview(mileStAuthRole,eNo);
 		
 		log.info("********* createAPQPTemplateTest Execution Ends *********");
+	}
+	
+	@DataProvider
+	public Object[][] getAPQPTestDataBOM()
+	{
+		Object data[][]=TestUtil.getTestData(sheetNameBOM);
+		return data;
+	}
+	
+	@Test(priority=3,dataProvider="getAPQPTestDataBOM")
+	public void selectBOMRoleTest(String engRole,String purchRole) throws InterruptedException
+	{
+		log.info("********* selectBOMRoleTest Execution Started *********");
+		apqptemplatedetailplanpage.addBOMRoles(engRole,purchRole);
+		log.info("********* selectBOMRoleTest Execution Ends *********");
 	}
 	
 	@AfterMethod

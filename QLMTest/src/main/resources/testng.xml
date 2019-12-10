@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>  
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">  
 <suite name="QLM Application Automation Test Suite">  
-  <test name="QLM Application Test Cases">  
+  <test name="QLM Application Test Cases" preserve-order="true">  
     <classes>  
-      <class name="com.qlm.qa.testcases.LoginPageTest"/>  
-      <class name="com.qlm.qa.testcases.HomePageTest"/>  
+      <class name="com.qlm.qa.testcases.APQPProjectCreatePageTest"/> 
+            <methods>
+                    <include name="validatAPQPProjectCreatePageTestTitleTest" />
+                    <include name="validateCreateAPQPProject" />
+                </methods> 
+      <class name="com.qlm.qa.testcases.APQPProjectPlanPageTest"/>  
+                <methods>
+                    <include name="apqpAProjectCreatePageTitleTest" />
+                    <include name="validateSelectAPQPTemplate" />
+                </methods> 
     </classes>  
   </test>  
 </suite>  

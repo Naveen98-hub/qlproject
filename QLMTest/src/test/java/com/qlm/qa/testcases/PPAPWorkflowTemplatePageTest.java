@@ -1,5 +1,6 @@
 package com.qlm.qa.testcases;
 
+import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -20,6 +21,8 @@ public class PPAPWorkflowTemplatePageTest extends TestBase
 	
 	String sheetName="PPAPTemplate";
 	
+	Logger log = Logger.getLogger(PPAPWorkflowTemplatePageTest.class);
+	
 	public PPAPWorkflowTemplatePageTest()
 	{
 		super();
@@ -28,6 +31,7 @@ public class PPAPWorkflowTemplatePageTest extends TestBase
 	@BeforeMethod
 	public void setUp() throws InterruptedException
 	{
+		log.info("***************** Test SetUp Started *****************");
 		initialize();
 		loginpage = new LoginPage();
 		homePage = loginpage.login(prop.getProperty("username"), prop.getProperty("password"));
@@ -38,9 +42,11 @@ public class PPAPWorkflowTemplatePageTest extends TestBase
 	@Test(priority=1)
 	public void ppapTemplatePageTitleTest()
 	{
+		log.info("********* ppapTemplatePageTitleTest Execution Started *********");
 		String pagetitle=ppapworkflowtemplatepage.validatePPAPWorkflowTemplatePageTitle();
-		Assert.assertEquals(pagetitle, "PPAP Workflow Templates - QLM");
+		Assert.assertEquals(pagetitle, "PPAP Workflow Templates - Quality Lifecycle Management - QA");
 		System.out.println("PPAP template page title is:"+pagetitle);
+		log.info("********* ppapTemplatePageTitleTest Execution Ends *********");
 	}
 
 	@DataProvider
@@ -53,28 +59,34 @@ public class PPAPWorkflowTemplatePageTest extends TestBase
 	@Test(priority=2,dataProvider="getPPAPTestData")
 	public void validateCreatePPAPTemplate(String tempName,String subLevel) throws InterruptedException
 	{
+		log.info("********* validateCreatePPAPTemplate Execution Started *********");
 		Thread.sleep(3000);
 		ppapworkflowtemplatepage.clickOnCreateNewTemplateButton();
 		ppapworkflowtemplatepage.createNewTemplate(tempName, subLevel);
+		log.info("********* validateCreatePPAPTemplate Execution Ends *********");
 	}
 	
 	@Test(priority=3)
 	public void validateEditPPAPTemplate() throws InterruptedException
 	{
+		log.info("********* validateEditPPAPTemplate Execution Started *********");
 		ppapworkflowtemplatepage.updateTemplate();
-		
+		log.info("********* validateEditPPAPTemplate Execution Ends *********");
 	}
 	
 	@Test(priority=4)
 	public void validateViewTemplate() throws InterruptedException
 	{
+		log.info("********* validateViewTemplate Execution Started *********");
 		ppapworkflowtemplatepage.viewTemplate();
+		log.info("********* validateViewTemplate Execution Ends *********");
 	}
 
 	@AfterMethod
 	public void tearDown()
 	{
 	   driver.quit();
+	   log.info("********* Browser Closed *********");
 	}
 	
 

@@ -28,6 +28,8 @@ public class HomePage extends TestBase
 	@FindBy(xpath = "//a[contains(@title,'Navigate to APQP Templates')]")
 	WebElement apqpTemplateLink;
 	
+	@FindBy(xpath = "//a[@title='Navigate to APQP Project']")
+	WebElement apqpProjectLink;
 
 	//Actions
 	
@@ -46,10 +48,13 @@ public class HomePage extends TestBase
 		return userNameLable.isDisplayed();
 	}
 
-	public PPAPWorkflowTemplatePage clickOnPPAPTemplete()
+	public PPAPWorkflowTemplatePage clickOnPPAPTemplete() throws InterruptedException
 	{
+		Thread.sleep(1000);
 		ppapSpan.click();
-		ppapTempleteLink.click();		
+		Thread.sleep(1000);
+		ppapTempleteLink.click();	
+		Thread.sleep(1000);
 		return new PPAPWorkflowTemplatePage();
 	}
 	
@@ -71,9 +76,14 @@ public class HomePage extends TestBase
 		return new APQPTemplateManagementPage();
 	}
 	
-	
-	
-	
-	
-	
+	public APQPProjectManagementPage clickOnAPQPProject() throws InterruptedException
+	{
+		Thread.sleep(1000);
+		apqpSpan.click();
+		Thread.sleep(1000);
+		apqpProjectLink.click();
+		Thread.sleep(1000);
+		return new APQPProjectManagementPage();
+	}
+
 }

@@ -63,7 +63,7 @@ public class APQPTemplateManagementPage extends TestBase
 
 	public void editAPQPTemplate() throws InterruptedException
 	{
-		Thread.sleep(4000);
+		Thread.sleep(5000);
 		templateListActionButton.click();
 		Thread.sleep(1000);
 		templateEdit.click();
@@ -73,7 +73,7 @@ public class APQPTemplateManagementPage extends TestBase
 	
 	public APQPTemplateDetailPlanPage viewAPQPTemplate() throws InterruptedException
 	{
-		Thread.sleep(1000);
+		Thread.sleep(2100);
 		templateListActionButton.click();
 		Thread.sleep(1000);
 		templateView.click();	

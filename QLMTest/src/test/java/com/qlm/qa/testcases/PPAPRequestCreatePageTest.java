@@ -1,5 +1,6 @@
 package com.qlm.qa.testcases;
 
+import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -22,6 +23,8 @@ public class PPAPRequestCreatePageTest extends TestBase
 	
 	String sheetName="PPAP";
 	
+	Logger log = Logger.getLogger(PPAPRequestCreatePageTest.class);
+	
 	public PPAPRequestCreatePageTest()
 	{
 		super();
@@ -30,6 +33,7 @@ public class PPAPRequestCreatePageTest extends TestBase
 	@BeforeMethod
 	public void setUp() throws InterruptedException
 	{
+		log.info("***************** Test SetUp Started *****************");
 		initialize();
 		loginpage = new LoginPage();
 		homePage = loginpage.login(prop.getProperty("username"), prop.getProperty("password"));
@@ -37,12 +41,14 @@ public class PPAPRequestCreatePageTest extends TestBase
 		ppaprequestcreatepage=ppapworkflowrequestpage.clickOnCreateNewPPAPRequestButton();
 	}
 	
-	//@Test(priority=1)
+	@Test(priority=1)
 	public void validatePPAPRequestCreatePageTitleTest()
 	{
+		log.info("********* validatePPAPRequestCreatePageTitleTest Execution Started *********");
 		String pagetitle=ppaprequestcreatepage.ppapRequestCreatePageTitle();
-		Assert.assertEquals(pagetitle, "PPAP Request Create - QLM");
+		Assert.assertEquals(pagetitle, "PPAP Request Create - Quality Lifecycle Management - QA");
 		System.out.println("PPAP template page title is:"+pagetitle);
+		log.info("********* validatePPAPRequestCreatePageTitleTest Execution Ends *********");
 	}
 	
 	
@@ -57,15 +63,16 @@ public class PPAPRequestCreatePageTest extends TestBase
 	public void validatePPAPRequestCreate(String pNo, String oCstmr,String ppapR,String tLocn,String tPlant,String tPgm,String tBsUnit,
 			String tPPAPRev,String tPPAPApr,String tSupplier,String tSupCoord,String tSupLoc,String tTemplate) throws InterruptedException
 	{
+		log.info("********* validatePPAPRequestCreate Execution Started *********");
 		ppaprequestcreatepage.ppapRequestCreate(pNo,oCstmr,ppapR,tLocn,tPlant,tPgm,tBsUnit,tPPAPRev,tPPAPApr,tSupplier,tSupCoord,tSupLoc,tTemplate);
-		
+		log.info("********* validatePPAPRequestCreate Execution Ends *********");
 	}
 	
 	@AfterMethod
 	public void tearDown()
 	 {
 	   driver.quit();
-	   
+	   log.info("********* Browser Closed *********");
 	 }
 	
 	

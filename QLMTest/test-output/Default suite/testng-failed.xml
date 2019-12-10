@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.qlm.qa.testcases.APQPTemplateDetailPlanPageTest">
+      <class name="com.qlm.qa.testcases.APQPProjectPlanPageTest">
         <methods>
-          <include name="createAPQPTemplateTest" invocation-numbers="0"/>
-          <include name="setUp"/>
+          <include name="validateSelectRoles" invocation-numbers="0"/>
           <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.qlm.qa.testcases.APQPTemplateDetailPlanPageTest -->
+      </class> <!-- com.qlm.qa.testcases.APQPProjectPlanPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

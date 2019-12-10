@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [QLM Application Automation Test Suite]">
+  <test name="QLM Application Test Cases(failed)">
+    <classes>
+      <class name="com.qlm.qa.testcases.APQPProjectPlanPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="apqpAProjectCreatePageTitleTest"/>
+          <include name="validateSelectAPQPTemplate"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qlm.qa.testcases.APQPProjectPlanPageTest -->
+      <class name="com.qlm.qa.testcases.APQPProjectCreatePageTest">
+        <methods>
+          <include name="validateCreateAPQPProject"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qlm.qa.testcases.APQPProjectCreatePageTest -->
+    </classes>
+  </test> <!-- QLM Application Test Cases(failed) -->
+</suite> <!-- Failed suite [QLM Application Automation Test Suite] -->

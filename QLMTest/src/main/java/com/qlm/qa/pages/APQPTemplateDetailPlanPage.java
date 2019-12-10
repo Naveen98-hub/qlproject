@@ -27,7 +27,7 @@ public class APQPTemplateDetailPlanPage extends TestBase
 	
 	@FindBy(xpath="//button[@id='modal-authoring-cancel']")
 	WebElement commonCancelForAll;
-	
+
 	  // PreRequisites
 	@FindBy(xpath="//button[@id='btn-prerequisite-action']")
 	WebElement preRequisitesAction;
@@ -74,9 +74,26 @@ public class APQPTemplateDetailPlanPage extends TestBase
 	
 	@FindBy(xpath = "//button[@type='button'][contains(.,'Add Gate Reviews')]")
 	WebElement addGateReviews;
+
+	@FindBy(xpath = "//div[contains(@class,'k-multiselect-wrap k-floatwrap')]")
+	WebElement gateReviewAuthRole;
 	
+	   //BOMRoles
+	@FindBy(xpath = "//a[contains(@aria-controls,'tab-content-bom-role')]")
+	WebElement bomRolestab;
+	
+	@FindBy(xpath = "(//div[contains(@class,'k-multiselect-wrap k-floatwrap')])[2]")
+	WebElement engineeringRole;
+	
+	@FindBy(xpath = "(//div[contains(@class,'k-multiselect-wrap k-floatwrap')])[3]")
+	WebElement purchasingRole;
+	
+	@FindBy(xpath="//button[@id='btn-bom-role-update']")
+	WebElement updateBOMRolesButton;
 	
 	//Actions
+	
+	Actions act= new Actions(driver);
 	
 	public APQPTemplateDetailPlanPage()
 	{
@@ -101,10 +118,12 @@ public class APQPTemplateDetailPlanPage extends TestBase
 		Thread.sleep(1000);
 	}
 
-	public void createPrerequisities(String preElem,String preSequence) throws InterruptedException
-	{
-		String tpreSequence = preSequence.substring(0, preSequence.indexOf('.'));
+	public void createPrerequisities(String preElem,String preSequence,String phaseNo) throws InterruptedException
+	{   
 		Thread.sleep(1000);
+		driver.findElement(By.xpath("//a/b[contains(text(),'"+phaseNo+"')]")).click();
+		String tpreSequence = preSequence.substring(0, preSequence.indexOf('.'));
+		Thread.sleep(2100);
 		preRequisitesAction.click();
 		Thread.sleep(1000);
 		addPreRequisiteElement.click();
@@ -160,12 +179,12 @@ public class APQPTemplateDetailPlanPage extends TestBase
 		titleOrName.sendKeys(tActivity);
 		SequesnceNo.sendKeys(taskSequence);
 		leadRoles.click();
-		Thread.sleep(2100);	
-		driver.findElement(By.xpath("(//li[@tabindex='-1'][contains(.,'"+leadRole+"')])[1]")).click();
+		Thread.sleep(3000);	
+		driver.findElement(By.xpath("(//li[contains(text(),'"+leadRole+"')])[2]")).click();
 		Thread.sleep(1000);	
 		teamRoles.click();
-		Thread.sleep(2100);
-		driver.findElement(By.xpath("(//li[@tabindex='-1'][contains(.,'"+teamRole+"')])[2]")).click();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("(//li[contains(text(),'"+teamRole+"')])[3]")).click();
 		Thread.sleep(500);
 		commonSubmitForAll.click();
 		Thread.sleep(1000);
@@ -174,7 +193,7 @@ public class APQPTemplateDetailPlanPage extends TestBase
 	public void createMilestoneGateReview(String mileStName,String mileStSeq) throws InterruptedException
 	{
 		String tmileStSeq = mileStSeq.substring(0, mileStSeq.indexOf('.'));
-		Actions act= new Actions(driver);
+		Thread.sleep(1000);	
 		act.moveToElement(milestoneGateAction).click().perform();
 		Thread.sleep(1000);	
 		addGateReviews.click();
@@ -186,4 +205,34 @@ public class APQPTemplateDetailPlanPage extends TestBase
 		Thread.sleep(1000);
 	}
 	
+	public void editMilestoneGateReview(String mileStAuthRole,String eNo) throws InterruptedException
+	{
+		Thread.sleep(1000);
+		WebElement editGatReview= driver.findElement(By.xpath("(//span[contains(@class,'glyphicon glyphicon-pencil text-warning')])["+eNo+"]"));
+		act.moveToElement(editGatReview).click().perform();
+		Thread.sleep(3000);
+		gateReviewAuthRole.click();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("(//li[contains(text(),'"+mileStAuthRole+"')])[4]")).click();
+		Thread.sleep(500);
+		commonSubmitForAll.click();
+		Thread.sleep(1000);
+	}
+	
+	public void addBOMRoles(String engRole,String purchRole ) throws InterruptedException
+	{
+		Thread.sleep(1000);
+		bomRolestab.click();
+		Thread.sleep(3000);
+		engineeringRole.click();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("(//li[contains(text(),'"+engRole+"')])[1]")).click();
+		Thread.sleep(1000);
+		purchasingRole.click();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("(//li[contains(text(),'"+purchRole+"')])[2]")).click();
+		Thread.sleep(1000);
+		updateBOMRolesButton.click();
+		Thread.sleep(1000);
+	}
 }

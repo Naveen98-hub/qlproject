@@ -1,5 +1,6 @@
 package com.qlm.qa.testcases;
 
+import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -16,6 +17,8 @@ public class PPAPWorkFlowRequestPageTest extends TestBase
 	HomePage homePage;
 	PPAPWorkFlowRequestPage ppapworkflowrequestpage;
 	
+	Logger log = Logger.getLogger(PPAPWorkFlowRequestPageTest.class);
+	
 	public PPAPWorkFlowRequestPageTest()
 	{
 		super();
@@ -24,6 +27,7 @@ public class PPAPWorkFlowRequestPageTest extends TestBase
 	@BeforeMethod
 	public void setUp() throws InterruptedException
 	{
+		log.info("***************** Test SetUp Started *****************");
 		initialize();
 		loginpage = new LoginPage();
 		homePage = loginpage.login(prop.getProperty("username"), prop.getProperty("password"));
@@ -33,16 +37,19 @@ public class PPAPWorkFlowRequestPageTest extends TestBase
 	@Test(priority=1)
 	public void validatePPAPRequestPageTitleTest()
 	{
+		log.info("********* validatePPAPRequestPageTitleTest Execution Started *********");
 		String pagetitle=ppapworkflowrequestpage.validatePPAPWorkflowRequestPageTitle();
-		Assert.assertEquals(pagetitle, "PPAP Workflow Request - QLM");
+		Assert.assertEquals(pagetitle, "PPAP Workflow Request - Quality Lifecycle Management - QA");
 		System.out.println("PPAP template page title is:"+pagetitle);
-		
+		log.info("********* validatePPAPRequestPageTitleTest Execution Ends *********");
 	}
 	
 	@Test(priority=2)
 	public void validateCreateNewRequestButton() throws InterruptedException
 	{
+		log.info("********* validateCreateNewRequestButton Execution Started *********");
 		ppapworkflowrequestpage.clickOnCreateNewPPAPRequestButton();
+		log.info("********* validateCreateNewRequestButton Execution Ends *********");
 	}
 
 	@AfterMethod
