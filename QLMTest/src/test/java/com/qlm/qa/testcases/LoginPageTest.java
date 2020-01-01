@@ -54,7 +54,7 @@ public class LoginPageTest extends TestBase
 	public void loginTest() throws InterruptedException
 	{
 		log.info("********* loginTest Execution Started *********");
-		homePage=loginpage.login(prop.getProperty("username"),prop.getProperty("password"));
+		loginpage.login(prop.getProperty("username"),prop.getProperty("password"));
 		log.info("********* loginTest Execution Ends *********");
 	}
 	

@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="54138" started-at="2019-12-10T13:44:14Z" finished-at="2019-12-10T13:45:08Z">
+  <suite name="Default suite" duration-ms="85802" started-at="2019-12-27T11:30:57Z" finished-at="2019-12-27T11:32:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="54138" started-at="2019-12-10T13:44:14Z" finished-at="2019-12-10T13:45:08Z">
-      <class name="com.qlm.qa.testcases.APQPProjectPlanPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qlm.qa.testcases.APQPProjectPlanPageTest@3dd4520b]" name="setUp" is-config="true" duration-ms="41038" started-at="2019-12-10T19:14:15Z" finished-at="2019-12-10T19:14:56Z">
+    <test name="Default test" duration-ms="85802" started-at="2019-12-27T11:30:57Z" finished-at="2019-12-27T11:32:23Z">
+      <class name="com.qlm.qa.testcases.AuditsPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qlm.qa.testcases.AuditsPageTest@47ef968d]" name="setUp" is-config="true" duration-ms="39318" started-at="2019-12-27T17:00:57Z" finished-at="2019-12-27T17:01:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateSelectRoles(java.lang.String, java.lang.String)[pri:4, instance:com.qlm.qa.testcases.APQPProjectPlanPageTest@3dd4520b]" name="validateSelectRoles" duration-ms="11470" started-at="2019-12-10T19:14:56Z" data-provider="getAPQPTestDataBOMRoles" finished-at="2019-12-10T19:15:07Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[APQP Engineer]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[APQP Engineer]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="validateAuditsPageTitleTest()[pri:1, instance:com.qlm.qa.testcases.AuditsPageTest@47ef968d]" name="validateAuditsPageTitleTest" duration-ms="19" started-at="2019-12-27T17:01:37Z" finished-at="2019-12-27T17:01:37Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateSelectRoles -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qlm.qa.testcases.APQPProjectPlanPageTest@3dd4520b]" name="tearDown" is-config="true" duration-ms="1073" started-at="2019-12-10T19:15:07Z" finished-at="2019-12-10T19:15:08Z">
+        </test-method> <!-- validateAuditsPageTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qlm.qa.testcases.AuditsPageTest@47ef968d]" name="tearDown" is-config="true" duration-ms="1272" started-at="2019-12-27T17:01:37Z" finished-at="2019-12-27T17:01:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.qlm.qa.testcases.APQPProjectPlanPageTest -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qlm.qa.testcases.AuditsPageTest@47ef968d]" name="setUp" is-config="true" duration-ms="35597" started-at="2019-12-27T17:01:38Z" finished-at="2019-12-27T17:02:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateCreateNewAuditBtn()[pri:2, instance:com.qlm.qa.testcases.AuditsPageTest@47ef968d]" name="validateCreateNewAuditBtn" duration-ms="8496" started-at="2019-12-27T17:02:14Z" finished-at="2019-12-27T17:02:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreateNewAuditBtn -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qlm.qa.testcases.AuditsPageTest@47ef968d]" name="tearDown" is-config="true" duration-ms="1074" started-at="2019-12-27T17:02:22Z" finished-at="2019-12-27T17:02:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qlm.qa.testcases.AuditsPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

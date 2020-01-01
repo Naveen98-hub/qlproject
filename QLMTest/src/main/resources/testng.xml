@@ -4,15 +4,9 @@
   <test name="QLM Application Test Cases" preserve-order="true">  
     <classes>  
       <class name="com.qlm.qa.testcases.APQPProjectCreatePageTest"/> 
-            <methods>
-                    <include name="validatAPQPProjectCreatePageTestTitleTest" />
-                    <include name="validateCreateAPQPProject" />
-                </methods> 
+ 
       <class name="com.qlm.qa.testcases.APQPProjectPlanPageTest"/>  
-                <methods>
-                    <include name="apqpAProjectCreatePageTitleTest" />
-                    <include name="validateSelectAPQPTemplate" />
-                </methods> 
+
     </classes>  
   </test>  
 </suite>  

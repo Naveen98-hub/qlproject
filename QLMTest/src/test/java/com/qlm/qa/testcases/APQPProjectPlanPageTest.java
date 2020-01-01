@@ -43,7 +43,7 @@ public class APQPProjectPlanPageTest extends TestBase
 		apqpprojectplanpage=apqpprojectmanagementpage.viewAPQPProject();
 	}
 	
-    //@Test(priority=1)
+    @Test(priority=1)
 	public void apqpAProjectCreatePageTitleTest()
 	{
 		log.info("********* apqpAProjectCreatePageTitleTest Execution Started *********");
@@ -60,7 +60,7 @@ public class APQPProjectPlanPageTest extends TestBase
 		return data;
 	}
 	
-	//@Test(priority=2,dataProvider="getAPQPTestData")
+	@Test(priority=2,dataProvider="getAPQPTestData")
 	public void validateSelectAPQPTemplate(String templateName) throws InterruptedException
 	{
 		log.info("********* validateSelectAPQPTemplate Execution Started *********");
@@ -68,7 +68,7 @@ public class APQPProjectPlanPageTest extends TestBase
 		log.info("********* validateSelectAPQPTemplate Execution Ends *********");
 	}
  
-	//@Test
+	@Test(priority=3)
 	public void validateSelectTargetCloseDate() throws InterruptedException
 	{
 		log.info("********* validateSelectTargetCloseDate Execution Started *********");
@@ -84,12 +84,22 @@ public class APQPProjectPlanPageTest extends TestBase
 	}
 	
 	@Test(priority=4,dataProvider="getAPQPTestDataBOMRoles")
-	public void validateSelectRoles(String engRole,String purchRole) throws InterruptedException
+	public void validateSelectRolesandMembers(String engRole,String purchRole,String roleUser) throws InterruptedException
 	{
 		log.info("********* validateSelectRoles Execution Started *********");
 		apqpprojectplanpage.selectRoles(engRole,purchRole);
+		apqpprojectplanpage.selectRoleUsers(roleUser);
 		log.info("********* validateSelectRoles Execution Ends *********");
 	}
+	
+	@Test(priority=5)
+	public void validatephaseTaskActivity() throws InterruptedException
+	{
+		log.info("********* validatephaseTaskActivity Execution Started *********");
+		apqpprojectplanpage.phaseTaskActivity();
+		log.info("********* validatephaseTaskActivity Execution Ends *********");
+	}
+	
 	
 	@AfterMethod
 	public void tearDown()

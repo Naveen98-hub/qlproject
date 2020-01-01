@@ -5,7 +5,10 @@
     <classes>
       <class name="com.qlm.qa.testcases.APQPProjectPlanPageTest">
         <methods>
+          <include name="validatephaseTaskActivity"/>
           <include name="tearDown"/>
+          <include name="validateSelectRolesandMembers"/>
+          <include name="validateSelectTargetCloseDate"/>
           <include name="apqpAProjectCreatePageTitleTest"/>
           <include name="validateSelectAPQPTemplate"/>
           <include name="setUp"/>
@@ -14,6 +17,7 @@
       <class name="com.qlm.qa.testcases.APQPProjectCreatePageTest">
         <methods>
           <include name="validateCreateAPQPProject"/>
+          <include name="validatAPQPProjectCreatePageTestTitleTest"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>

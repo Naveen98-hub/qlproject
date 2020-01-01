@@ -30,6 +30,20 @@ public class HomePage extends TestBase
 	
 	@FindBy(xpath = "//a[@title='Navigate to APQP Project']")
 	WebElement apqpProjectLink;
+	
+	@FindBy(xpath="(//span[contains(text(),'Assessment')])[1]")
+	WebElement assessmentLink;
+	
+	@FindBy(xpath="(//span[contains(text(),'Audit')])[2]")
+	WebElement auditLink;
+	
+	@FindBy(xpath="(//span[contains(text(),'Template')])[4]")
+	WebElement auditTemplateLink;
+	
+	@FindBy(xpath="(//span[contains(text(),'Element')])[6]")
+	WebElement auditElementLink;
+	
+	
 
 	//Actions
 	
@@ -85,5 +99,30 @@ public class HomePage extends TestBase
 		Thread.sleep(1000);
 		return new APQPProjectManagementPage();
 	}
+	
+	public AuditTemplateIndexPage clickOnAuditTemplate() throws InterruptedException
+	{
+		Thread.sleep(1000);
+		assessmentLink.click();
+		Thread.sleep(1000);
+		auditLink.click();
+		Thread.sleep(1000);
+		auditTemplateLink.click();
+		Thread.sleep(1000);
+		return new AuditTemplateIndexPage();
+	}
 
+	public AuditsPage clickOnAuditElement() throws InterruptedException
+	{
+		Thread.sleep(1000);
+		assessmentLink.click();
+		Thread.sleep(1000);
+		auditLink.click();
+		Thread.sleep(1000);
+		auditElementLink.click();
+		Thread.sleep(1000);
+		return new AuditsPage();
+	}
+	
+	
 }

@@ -3,13 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.qlm.qa.testcases.APQPProjectPlanPageTest">
+      <class name="com.qlm.qa.testcases.AuditTemplateCreatePageTest">
         <methods>
-          <include name="validateSelectRoles" invocation-numbers="0"/>
-          <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="createAuditTemplate" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.qlm.qa.testcases.APQPProjectPlanPageTest -->
+      </class> <!-- com.qlm.qa.testcases.AuditTemplateCreatePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
