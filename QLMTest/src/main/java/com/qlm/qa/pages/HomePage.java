@@ -34,7 +34,7 @@ public class HomePage extends TestBase
 	@FindBy(xpath="(//span[contains(text(),'Assessment')])[1]")
 	WebElement assessmentLink;
 	
-	@FindBy(xpath="(//span[contains(text(),'Audit')])[2]")
+	@FindBy(xpath="//span[@class='menu-item-title submenu_tree' and contains(text(),'Audit')]")
 	WebElement auditLink;
 	
 	@FindBy(xpath="(//span[contains(text(),'Template')])[4]")
@@ -43,6 +43,11 @@ public class HomePage extends TestBase
 	@FindBy(xpath="(//span[contains(text(),'Element')])[6]")
 	WebElement auditElementLink;
 	
+	@FindBy(xpath="//span[contains(text(),'Supplier Management')]")
+	WebElement supplierManagement;
+	
+	@FindBy(xpath="//span[@class='submenu_tree' and contains(text(),'Audit')]")
+	WebElement supplierAuditLink;
 	
 
 	//Actions
@@ -120,6 +125,16 @@ public class HomePage extends TestBase
 		auditLink.click();
 		Thread.sleep(1000);
 		auditElementLink.click();
+		Thread.sleep(1000);
+		return new AuditsPage();
+	}
+	
+	public AuditsPage clickOnSupplierAuditLink() throws InterruptedException
+	{
+		Thread.sleep(1500);
+		supplierManagement.click();
+		Thread.sleep(1000);
+		supplierAuditLink.click();
 		Thread.sleep(1000);
 		return new AuditsPage();
 	}

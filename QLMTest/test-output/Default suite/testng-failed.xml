@@ -3,12 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.qlm.qa.testcases.AuditTemplateCreatePageTest">
+      <class name="com.qlm.qa.testcases.AuditCreatePageTest">
         <methods>
           <include name="setUp"/>
-          <include name="createAuditTemplate" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="validateAuditCreate" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.qlm.qa.testcases.AuditTemplateCreatePageTest -->
+      </class> <!-- com.qlm.qa.testcases.AuditCreatePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

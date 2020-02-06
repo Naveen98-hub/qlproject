@@ -24,6 +24,9 @@ public class AuditTemplateCreatePage extends TestBase
 	@FindBy(xpath="//input[@id='CreateTemplate']")
 	WebElement createTemplateBtn;
 	
+	@FindBy(xpath = "//label[@class='btn btn-success toggle-on'][contains(.,'Weightage')]")
+	WebElement averageScoreBtn;
+	
 	//Actions
 	
 	Actions act=new Actions(driver);
@@ -44,7 +47,7 @@ public class AuditTemplateCreatePage extends TestBase
 		templateName.sendKeys(tempName);
 		Thread.sleep(1000);
 	    Select sel=new Select(questionnaireGroups);
-	    sel.selectByVisibleText(questGroup);
+	    sel.selectByVisibleText(questGroup);		
 	    Thread.sleep(1500);
 	    
 	    List<WebElement> questTabs = driver.findElements(By.xpath("//h4[@role='tab']"));

@@ -46,7 +46,7 @@ public class AuditsPageTest extends TestBase
 	}
 	
 	@Test(priority=2)
-	public void validateCreateNewAuditBtn() throws InterruptedException
+	public void validateCreateNewAuditBtnTest() throws InterruptedException
 	{
 		log.info("********* validateCreateNewAuditBtn Execution Started *********");
 		auditspage.createNewAuditBtn();

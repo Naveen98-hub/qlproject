@@ -41,13 +41,13 @@ public class AuditTemplateAmendPageTest extends TestBase
 	}
 	
 	@Test(priority=1)
-	public void validateAuditTemplateAmendPageTest()
+	public void validateAuditTemplateAmendPageTitleTest()
 	{
-		log.info("********* validateAuditTemplateAmendPageTest Execution Started *********");
-		String pageTitle=audittemplateamendpage.validateAuditTemplateAmendPage();
+		log.info("********* validateAuditTemplateAmendPageTitleTest Execution Started *********");
+		String pageTitle=audittemplateamendpage.validateAuditTemplateAmendPageTitle();
 		Assert.assertEquals(pageTitle, "Template Amend - Quality Lifecycle Management - QA");
 		log.info("Page title is:"+pageTitle);
-		log.info("********* validateAuditTemplateAmendPageTest Execution Ends *********");
+		log.info("********* validateAuditTemplateAmendPageTitleTest Execution Ends *********");
 	}
 	
 	@Test(priority=2)
