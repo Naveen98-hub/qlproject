@@ -17,7 +17,7 @@ import com.qlm.qa.util.TestUtil;
 public class APQPProjectCreatePageTest extends TestBase
 {
 	LoginPage loginpage;
-	HomePage homePage;
+	HomePage homepage;
 	APQPProjectManagementPage apqpprojectmanagementpage;
 	APQPProjectCreatePage apqpprojectcreatepage;
 	
@@ -36,9 +36,9 @@ public class APQPProjectCreatePageTest extends TestBase
 		log.info("***************** Test SetUp Started *****************");
 		initialize();
 		loginpage = new LoginPage();
-		homePage = loginpage.login(prop.getProperty("username"), prop.getProperty("password"));
+		homepage = loginpage.login(prop.getProperty("username"), prop.getProperty("password"));
 		log.info("Admin Login Successfull");
-		apqpprojectmanagementpage = homePage.clickOnAPQPProject();
+		apqpprojectmanagementpage = homepage.clickOnAPQPProject();
 		apqpprojectcreatepage=apqpprojectmanagementpage.createNewAPQPProjectButton();
 	}
 	

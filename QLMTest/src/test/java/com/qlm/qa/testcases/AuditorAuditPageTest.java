@@ -37,7 +37,6 @@ public class AuditorAuditPageTest extends TestBase
 		auditspage = homePage.clickOnAuditElement();
 		auditspage.scrollPage();
 		auditorauditpage = auditspage.clickOnAssessment();
-		
 	}
 
 	@Test(priority=1)

@@ -24,6 +24,9 @@ public class AuditsPage extends TestBase
 	@FindBy(xpath = "(//span[@class='text-success '][contains(.,'Assessment')])[1]")
 	WebElement assessmentBtn;
 	
+	@FindBy(xpath = "//span[contains(.,'External Audit Upload')]")
+	WebElement externalAuditUploadBtn;
+	
 	
 	
 	//Actions
@@ -64,6 +67,16 @@ public class AuditsPage extends TestBase
 		assessmentBtn.click();
 		Thread.sleep(1000);
 		return new AuditorAuditPage();
+	}
+	
+	public ExternalDocumentUploadPage clickOnExternalAuditUpload() throws InterruptedException
+	{
+		Thread.sleep(1000);
+		auditsListActionBtn.click();
+		Thread.sleep(1000);
+		externalAuditUploadBtn.click();
+		Thread.sleep(1000);
+		return new ExternalDocumentUploadPage();
 	}
 	
 	public void scrollPage() throws InterruptedException

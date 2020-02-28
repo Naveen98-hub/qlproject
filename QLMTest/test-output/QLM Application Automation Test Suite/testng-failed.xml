@@ -1,27 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [QLM Application Automation Test Suite]">
-  <test name="QLM Application Test Cases(failed)">
+  <test name="QLM Audit Test Case2(failed)">
     <classes>
-      <class name="com.qlm.qa.testcases.APQPProjectPlanPageTest">
+      <class name="com.qlm.qa.testcases.AuditorAuditPageTest">
         <methods>
-          <include name="validatephaseTaskActivity"/>
-          <include name="tearDown"/>
-          <include name="validateSelectRolesandMembers"/>
-          <include name="validateSelectTargetCloseDate"/>
-          <include name="apqpAProjectCreatePageTitleTest"/>
-          <include name="validateSelectAPQPTemplate"/>
+          <include name="validateAuditorAuditResponseSubmitTest"/>
           <include name="setUp"/>
-        </methods>
-      </class> <!-- com.qlm.qa.testcases.APQPProjectPlanPageTest -->
-      <class name="com.qlm.qa.testcases.APQPProjectCreatePageTest">
-        <methods>
-          <include name="validateCreateAPQPProject"/>
-          <include name="validatAPQPProjectCreatePageTestTitleTest"/>
           <include name="tearDown"/>
-          <include name="setUp"/>
         </methods>
-      </class> <!-- com.qlm.qa.testcases.APQPProjectCreatePageTest -->
+      </class> <!-- com.qlm.qa.testcases.AuditorAuditPageTest -->
     </classes>
-  </test> <!-- QLM Application Test Cases(failed) -->
+  </test> <!-- QLM Audit Test Case2(failed) -->
 </suite> <!-- Failed suite [QLM Application Automation Test Suite] -->

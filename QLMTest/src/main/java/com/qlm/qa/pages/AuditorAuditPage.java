@@ -49,21 +49,20 @@ public class AuditorAuditPage extends TestBase
 	{
 		Thread.sleep(1500);
 		driver.findElement(By.xpath("(//button[@class='btn btn-primary btn-sm dropdown-toggle'])["+i+"]")).click();
-		Thread.sleep(1000);
-		driver.findElement(By.xpath("(//span[contains(text(),' Response')])["+i+"]")).click();
 		Thread.sleep(1500);
+		driver.findElement(By.xpath("(//span[contains(text(),' Response')])["+i+"]")).click();
+		Thread.sleep(2100);
 		driver.findElement(By.xpath("//button[@id='ratingControl']")).click();
-		Thread.sleep(500);
+		Thread.sleep(1000);
 		selectRandomProduct();
 		Thread.sleep(1000);
 		responseVerifiedBtn.click();
 		Thread.sleep(1000);
 		okBtn.click();
-		Thread.sleep(1000);
-
-	}
+		Thread.sleep(2100);
+ 	}
 	act.moveToElement(submitBtn).click().perform();
-	Thread.sleep(1000);
+	Thread.sleep(1500);
   }
 	
 	public static int selectRandomProduct()

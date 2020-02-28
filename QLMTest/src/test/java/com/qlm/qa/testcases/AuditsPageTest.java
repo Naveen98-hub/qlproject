@@ -52,7 +52,7 @@ public class AuditsPageTest extends TestBase
 		auditspage.createNewAuditBtn();
 		log.info("********* validateCreateNewAuditBtn Execution Ends *********");
 	}
-	
+
 	@AfterMethod
 	public void tearDown()
 	{

@@ -53,20 +53,23 @@ public class AuditCreatePageTest extends TestBase
 	}
 	
 	@DataProvider
-	public Object[][] getAPQPTestData()
+	public Object[][] getAuditTestData()
 	{
 		Object data[][]=TestUtil.getTestData(sheetName);
 		return data;
 	}
 	
-	@Test(priority=2,dataProvider="getAPQPTestData")
+	@Test(priority=2,dataProvider="getAuditTestData")
 	public void validateAuditCreate(String aType,String aReason,String aSupplier,String aName,String tmpltName,
 			String approvers,String aReviewers) throws InterruptedException
 	{
 		log.info("********* validateAuditCreate Execution Started *********");
 		auditscreatepage.auditCreate(aType, aReason, aSupplier, aName,approvers);
-		auditscreatepage.internalExternalAuditSelect(tmpltName);
-		auditscreatepage.selfAudit(aReviewers);
+		auditscreatepage.externalAuditSelect();                    //Use this code for selecting only External Audit type
+		//auditscreatepage.internalAuditSelect(tmpltName);         //Use this code for selecting only Internal Audit type
+		  auditscreatepage.selfAudit(aReviewers);
+		//auditscreatepage.offSiteAudit(aReviewers);
+		//auditscreatepage.onSiteAudit(aReviewers);
 		log.info("********* validateAuditCreate Execution Ends *********");
 	}
 	

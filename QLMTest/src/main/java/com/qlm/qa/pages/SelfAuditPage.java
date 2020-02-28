@@ -40,26 +40,26 @@ public class SelfAuditPage extends TestBase
 	
 	public void selfAuditResponseSubmit() throws InterruptedException
 	{
-	List<WebElement> actions = driver.findElements(By.xpath("//button[@class='btn btn-primary btn-sm dropdown-toggle']"));
+	List<WebElement> actions = driver.findElements(By.xpath("//span[@class='text-warning'][contains(.,'Response')]"));
 	int esize=actions.size();
 	//int j=1;
 	for(int i=1;i<=esize;i++ )
 	{
-		Thread.sleep(1500);
-		driver.findElement(By.xpath("(//button[@class='btn btn-primary btn-sm dropdown-toggle'])["+i+"]")).click();
-		Thread.sleep(1000);
-		driver.findElement(By.xpath("(//span[contains(text(),' Response')])["+i+"]")).click();
-		Thread.sleep(1500);
+		Thread.sleep(1900);
+		act.moveToElement(driver.findElement(By.xpath("(//span[@class='text-warning'][contains(.,'Response')])["+i+"]"))).click().perform();
+/*		Thread.sleep(1000);
+		driver.findElement(By.xpath("(//span[contains(text(),' Response')])["+i+"]")).click();*/
+		Thread.sleep(2100);
 		driver.findElement(By.xpath("//button[@id='ratingControl']")).click();
-		Thread.sleep(500);
+		Thread.sleep(1000);
 		selectRandomProduct();
 		Thread.sleep(1000);
 		okBtn.click();
-		Thread.sleep(1000);
+		Thread.sleep(2100);
 
 	}
 	act.moveToElement(submitBtn).click().perform();
-	Thread.sleep(1000);
+	Thread.sleep(1500);
   }
 	
 	

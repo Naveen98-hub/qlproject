@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">  
+<suite name="QLM Application Automation Test Suite" parallel="false" preserve-order="true" verbose="1">  
+ 
+  <test name="QLM Audit Test Case1">  
+    <classes>  
+      <class name="com.qlm.qa.testcases.AuditCreatePageTest"/> 
+    </classes>
+  </test>   
+  
+  <test name="QLM Audit Test Case2">  
+    <classes>  
+      <class name="com.qlm.qa.testcases.ExternalDocumentUploadPageTest"/> 
+    </classes>
+   </test>   
+</suite>  

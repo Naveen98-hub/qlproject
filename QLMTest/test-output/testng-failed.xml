@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.qlm.qa.testcases.AuditCreatePageTest">
+      <class name="com.qlm.qa.testcases.ExternalDocumentUploadPageTest">
         <methods>
-          <include name="setUp"/>
+          <include name="validateAuditorDocUploadTest"/>
+          <include name="validateExternalDocumentUploadPageTitleTest"/>
           <include name="tearDown"/>
-          <include name="validateAuditCreate" invocation-numbers="0"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.qlm.qa.testcases.AuditCreatePageTest -->
+      </class> <!-- com.qlm.qa.testcases.ExternalDocumentUploadPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

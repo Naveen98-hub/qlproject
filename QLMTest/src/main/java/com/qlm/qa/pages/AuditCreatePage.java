@@ -1,8 +1,5 @@
 package com.qlm.qa.pages;
 
-import java.util.List;
-import java.util.Random;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -30,31 +27,31 @@ public class AuditCreatePage extends TestBase
 	@FindBy(xpath="//input[@id='Name']")
 	WebElement name;
 	
-	@FindBy(xpath = "(//div[contains(@class,'k-multiselect-wrap k-floatwrap')])[10]")
+	@FindBy(xpath = "(//div[contains(@class,'k-multiselect-wrap k-floatwrap')])[7]")
 	WebElement coordinator;
 	
 	@FindBy(xpath = "(//div[contains(@class,'k-multiselect-wrap k-floatwrap')])[5]")
 	WebElement supplierCoordinator;
 	
-	@FindBy(xpath = "(//div[contains(@class,'k-multiselect-wrap k-floatwrap')])[12]")
+	@FindBy(xpath = "(//div[contains(@class,'k-multiselect-wrap k-floatwrap')])[13]")
 	WebElement template;
 	
-	@FindBy(xpath = "(//div[contains(@class,'k-multiselect-wrap k-floatwrap')])[13]")
+	@FindBy(xpath = "(//div[contains(@class,'k-multiselect-wrap k-floatwrap')])[12]")
 	WebElement auditors; 
 	
 	@FindBy(xpath = "(//div[contains(@class,'k-multiselect-wrap k-floatwrap')])[14]")
 	WebElement reviewers;
 	
-	@FindBy(xpath = "(//label[@class='btn btn-default active toggle-off'][contains(.,'Off')])[1]")
+	@FindBy(xpath = "//label[@class='btn btn-success active toggle-off']")
 	WebElement internalOrExternalSelectBtn;
 	
-	@FindBy(xpath = "(//label[@class='btn btn-default active toggle-off'][contains(.,'Off')])[2]")
+	@FindBy(xpath = "(//label[@class='btn btn-default active toggle-off'][contains(.,'Off')])[1]")
 	WebElement selfAuditBtn;
 	
-	@FindBy(xpath = "(//label[@class='btn btn-default active toggle-off'][contains(.,'Off')])[3]")
+	@FindBy(xpath = "(//label[@class='btn btn-default active toggle-off'][contains(.,'Off')])[2]")
 	WebElement offSiteAuditBtn;
 	
-	@FindBy(xpath = "(//label[@class='btn btn-default active toggle-off'][contains(.,'Off')])[4]")
+	@FindBy(xpath = "(//label[@class='btn btn-default active toggle-off'][contains(.,'Off')])[3]")
 	WebElement onSiteAuditBtn;
 	
 	@FindBy(xpath="//input[@id='btn-submit-audit']")
@@ -69,10 +66,10 @@ public class AuditCreatePage extends TestBase
 	// Self Audit
 	
 	@FindBy(xpath="//input[@id='ProposedSelfAuditStartDate']")
-	WebElement inp_AuditStartDate;
+	WebElement inp_SelfAuditStartDate;
 	
 	@FindBy(xpath="(//a[contains(text(),'21')])[1]")
-	WebElement date_AuditStartDate;
+	WebElement date_SelfAuditStartDate;
 	
 	@FindBy(xpath="//input[@id='ProposedSelfAuditEndDate']")
 	WebElement inp_AuditEndDate;
@@ -81,10 +78,10 @@ public class AuditCreatePage extends TestBase
 	WebElement date_AuditEndDate;
 	
 	@FindBy(xpath="//input[@id='ProposedSelfSubmissionDate']")
-	WebElement inp_SubmissionDate;
+	WebElement inp_SelfAuditSubmissionDate;
 	
 	@FindBy(xpath="(//a[contains(text(),'26')])[1]")
-	WebElement date_SubmissionDate;
+	WebElement date_SelfAuditSubmissionDate;
 	
 	@FindBy(xpath="//input[@id='ProposedSelfReviewStartDate']")
 	WebElement inp_ReviewStartDate;
@@ -97,6 +94,35 @@ public class AuditCreatePage extends TestBase
 	
 	@FindBy(xpath="(//a[contains(text(),'27')])[1]")
 	WebElement date_ReviewEndDate;
+	
+	//OffSite Audit
+	
+	@FindBy(xpath="//input[@id='ProposedOffsideAuditStartDate']")
+	WebElement inp_OffSiteAuditStartDate;
+	
+	@FindBy(xpath="(//a[contains(text(),'26')])[1]")
+	WebElement date_OffSiteAuditStartDate;
+	
+	@FindBy(xpath="//input[@id='ProposedOffsideAuditEndDate']")
+	WebElement inp_OffSiteAuditSubmissionDate;
+	
+	@FindBy(xpath="(//a[contains(text(),'26')])[1]")
+	WebElement date_OffSiteAuditSubmissionDate;
+	
+	//OnSite Audit
+	
+	@FindBy(xpath="//input[@id='ProposedOnsideAuditStartDate']")
+	WebElement inp_OnSiteAuditStartDate;
+	
+	@FindBy(xpath="(//a[contains(text(),'26')])[1]")
+	WebElement date_OnSiteAuditStartDate;
+	
+	@FindBy(xpath="//input[@id='ProposedOnsideAuditEndDate']")
+	WebElement inp_OnSiteAuditSubmissionDate;
+	
+	@FindBy(xpath="(//a[contains(text(),'26')])[1]")
+	WebElement date_OnSiteAuditSubmissionDate;
+	
 	
 	//Actions
 	
@@ -140,7 +166,7 @@ public class AuditCreatePage extends TestBase
 		coordinator.click();
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//li[contains(text(),'Norman Hemmings (admin)')]")).click();
-		Thread.sleep(1500);
+		Thread.sleep(1000);
 		act.moveToElement(auditors).click().perform();
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("(//li[contains(text(),'"+approvers+"')])[2]")).click();
@@ -148,11 +174,9 @@ public class AuditCreatePage extends TestBase
 
 	}
 	
-	public void internalExternalAuditSelect(String tmpltName) throws InterruptedException
+	public void internalAuditSelect(String tmpltName) throws InterruptedException
 	{
-		//internalOrExternalSelectBtn.click();
-		Thread.sleep(1000);
-		act.moveToElement(template).click().perform();
+     	act.moveToElement(template).click().perform();
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//li[contains(text(),'"+tmpltName+"')]")).click();
 		Thread.sleep(1000);
@@ -160,6 +184,12 @@ public class AuditCreatePage extends TestBase
 		Thread.sleep(500);
 		maximimValue.sendKeys("8");
 		Thread.sleep(500);
+	}
+	
+	public void externalAuditSelect() throws InterruptedException
+	{
+		internalOrExternalSelectBtn.click();
+		Thread.sleep(1000);
 	}
 
 	public void selfAudit(String aReviewers) throws InterruptedException
@@ -178,19 +208,75 @@ public class AuditCreatePage extends TestBase
 		Thread.sleep(1000);
 		date_ReviewEndDate.click();
 		Thread.sleep(1000);
-		inp_AuditStartDate.click();
+		inp_SelfAuditStartDate.click();
 		Thread.sleep(1000);
-		date_AuditStartDate.click();
+		date_SelfAuditStartDate.click();
 		Thread.sleep(1000);
-		inp_SubmissionDate.click();
+		inp_SelfAuditSubmissionDate.click();
 		Thread.sleep(1000);
-		date_SubmissionDate.click();
+		date_SelfAuditSubmissionDate.click();
 		Thread.sleep(1500);
-		//act.moveToElement(createBtn).click().perform();
+		act.moveToElement(createBtn).click().perform();
+		Thread.sleep(1000);
+	}
+	
+	public void offSiteAudit(String aReviewers) throws InterruptedException
+	{
+		act.moveToElement(offSiteAuditBtn).click().perform();
+		Thread.sleep(1000);
+		reviewers.click();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("(//li[contains(text(),'"+aReviewers+"')])[3]")).click();
+		Thread.sleep(1000);
+		inp_ReviewStartDate.click();
+		Thread.sleep(1000);
+		date_ReviewStartDate.click();
+		Thread.sleep(1000);
+		inp_ReviewEndDate.click();
+		Thread.sleep(1000);
+		date_ReviewEndDate.click();
+		Thread.sleep(1000);
+		inp_OffSiteAuditStartDate.click();
+		Thread.sleep(1000);
+		date_OffSiteAuditStartDate.click();
+		Thread.sleep(1000);
+		inp_OffSiteAuditSubmissionDate.click();
+		Thread.sleep(1000);
+		date_OffSiteAuditSubmissionDate.click();
+		Thread.sleep(1500);
+		act.moveToElement(createBtn).click().perform();
+		Thread.sleep(1000);
+	}
+	
+	public void onSiteAudit(String aReviewers) throws InterruptedException
+	{
+		act.moveToElement(onSiteAuditBtn).click().perform();
+		Thread.sleep(1000);
+		reviewers.click();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("(//li[contains(text(),'"+aReviewers+"')])[3]")).click();
+		Thread.sleep(1000);
+		inp_ReviewStartDate.click();
+		Thread.sleep(1000);
+		date_ReviewStartDate.click();
+		Thread.sleep(1000);
+		inp_ReviewEndDate.click();
+		Thread.sleep(1000);
+		date_ReviewEndDate.click();
+		Thread.sleep(1000);
+		inp_OnSiteAuditStartDate.click();
+		Thread.sleep(1000);
+		date_OnSiteAuditStartDate.click();
+		Thread.sleep(1000);
+		inp_OnSiteAuditSubmissionDate.click();
+		Thread.sleep(1000);
+		date_OnSiteAuditSubmissionDate.click();
+		Thread.sleep(1500);
+		act.moveToElement(createBtn).click().perform();
 		Thread.sleep(1000);
 	}
 
-	public static int selectRandomProduct()
+/*	public static int selectRandomProduct()
 	{
 	    // Find and click on a random product
 	    List<WebElement> allProducts = driver.findElements(By.xpath("//label[@class='btn btn-default active toggle-off']"));
@@ -199,5 +285,5 @@ public class AuditCreatePage extends TestBase
         allProducts.get(randomProduct).click();
 	    System.out.println(randomProduct);
 		return randomProduct;
-	}
+	}*/
 }

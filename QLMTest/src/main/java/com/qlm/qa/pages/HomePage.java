@@ -1,3 +1,4 @@
+
 package com.qlm.qa.pages;
 
 import org.openqa.selenium.WebElement;
@@ -43,11 +44,20 @@ public class HomePage extends TestBase
 	@FindBy(xpath="(//span[contains(text(),'Element')])[6]")
 	WebElement auditElementLink;
 	
-	@FindBy(xpath="//span[contains(text(),'Supplier Management')]")
+	@FindBy(xpath = "(//span[contains(.,'Supplier')])[1]")
 	WebElement supplierManagement;
 	
 	@FindBy(xpath="//span[@class='submenu_tree' and contains(text(),'Audit')]")
 	WebElement supplierAuditLink;
+	
+	@FindBy(xpath = "//span[@class='menu-item-title'][contains(.,'Plant Quality')]")
+	WebElement plantQualitySpan;
+	
+	@FindBy(xpath = "//a[@class='link-item-menu'][contains(.,'Non Conformity')]")
+	WebElement nonConformityLink;
+	
+	
+	
 	
 
 	//Actions
@@ -119,7 +129,7 @@ public class HomePage extends TestBase
 
 	public AuditsPage clickOnAuditElement() throws InterruptedException
 	{
-		Thread.sleep(1000);
+		Thread.sleep(1900);
 		assessmentLink.click();
 		Thread.sleep(1000);
 		auditLink.click();
@@ -131,12 +141,23 @@ public class HomePage extends TestBase
 	
 	public AuditsPage clickOnSupplierAuditLink() throws InterruptedException
 	{
-		Thread.sleep(1500);
+		Thread.sleep(1900);
 		supplierManagement.click();
 		Thread.sleep(1000);
 		supplierAuditLink.click();
 		Thread.sleep(1000);
 		return new AuditsPage();
+	}
+	
+	public NonConformityPage clickOnNonConformitylink() throws InterruptedException
+	{
+		Thread.sleep(1900);
+		plantQualitySpan.click();
+		Thread.sleep(1000);
+		nonConformityLink.click();
+		Thread.sleep(1000);
+		return new NonConformityPage();
+		
 	}
 	
 	
