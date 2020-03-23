@@ -49,7 +49,7 @@ public class APQPProjectCreatePageTest extends TestBase
 		String pagetitle=apqpprojectcreatepage.validateAPQPProjectCreatePageTitle();
 		Assert.assertEquals(pagetitle, "Project Create - Quality Lifecycle Management - QA");
 		log.info("Page title is:"+pagetitle);
-		log.info("********* apqpProjectCreatePageTitleTest Execution Ends *********");
+		log.info("********* apqpProjectCreatePageTitleTest Execution Ends *********"); 
 	}
 	
 	@DataProvider

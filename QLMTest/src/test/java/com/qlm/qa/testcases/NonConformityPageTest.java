@@ -16,9 +16,7 @@ public class NonConformityPageTest extends TestBase
 	LoginPage loginpage;
 	HomePage homepage;
 	NonConformityPage nonconformitypage;
-	
-	
-	
+
 	Logger log = Logger.getLogger(AuditTemplateIndexPageTest.class);
 	
 	public NonConformityPageTest()

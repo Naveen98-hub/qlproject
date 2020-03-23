@@ -70,7 +70,7 @@ public class APQPProjectPlanPage extends TestBase
 	WebElement editMilestone;
 
 	//Actions
-	boolean staleElement = true; 
+	//boolean staleElement = true; 
 	Actions act=new Actions(driver);
 		
 	public APQPProjectPlanPage()

@@ -13,6 +13,13 @@ public class NonConformityPage extends TestBase
 	@FindBy(xpath = "//a[@class='btn btn-sm btn-info'][contains(.,'Create New Non Conformity')]")
 	WebElement createNewNonConformityBtn;
 	
+	@FindBy(xpath = "(//button[@class='btn btn-primary btn-sm dropdown-toggle'][contains(.,'Action')])[1]")
+	WebElement ncActionBtn;
+	
+	@FindBy(xpath = "(//span[@class='text-success'][contains(.,'View')])[1]")
+	WebElement ncViewBtn;
+	
+	
 	//Actions
 	
 	public NonConformityPage()
@@ -25,12 +32,25 @@ public class NonConformityPage extends TestBase
 		return driver.getTitle();
 	}
 
-	public void clickOnCreateNewNonConformityBtn() throws InterruptedException
+	public NonConformityCreatePage clickOnCreateNewNonConformityBtn() throws InterruptedException
 	{
 		Thread.sleep(1900);
 		createNewNonConformityBtn.click();
 		Thread.sleep(1000);
+		return new NonConformityCreatePage();
 	}
+	
+	public NonConformityViewPage clickOnNonConformityViewBtn() throws InterruptedException
+	{
+		Thread.sleep(1000);
+		ncActionBtn.click();
+		Thread.sleep(1000);
+		ncViewBtn.click();
+		Thread.sleep(1000);
+		return new NonConformityViewPage();
+	}
+	
+	
 	
 
 }

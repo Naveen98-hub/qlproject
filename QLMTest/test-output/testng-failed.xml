@@ -3,14 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.qlm.qa.testcases.ExternalDocumentUploadPageTest">
+      <class name="com.qlm.qa.testcases.EightDisciplineCreatePageTest">
         <methods>
-          <include name="validateAuditorDocUploadTest"/>
-          <include name="validateExternalDocumentUploadPageTitleTest"/>
           <include name="tearDown"/>
+          <include name="validateClickOnCreate8DBtnTest"/>
+          <include name="validateEightDisciplinePageTitleTest"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.qlm.qa.testcases.ExternalDocumentUploadPageTest -->
+      </class> <!-- com.qlm.qa.testcases.EightDisciplineCreatePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
