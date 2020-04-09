@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>  
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">  
 <suite name="QLM Application Automation Test Suite" parallel="false" preserve-order="true" verbose="1">  
+
+    <listeners>
+		<listener class-name="com.qlm.qa.extentreportlistner.ExtentReporterNG" />
+	</listeners>
+
   <test name="QLM Application Test Case1">  
     <classes>  
       <class name="com.qlm.qa.testcases.AuditTemplateIndexPageTest"/> 

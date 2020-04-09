@@ -56,7 +56,8 @@ public class HomePage extends TestBase
 	@FindBy(xpath = "//a[@class='link-item-menu'][contains(.,'Non Conformity')]")
 	WebElement nonConformityLink;
 	
-	
+	@FindBy(xpath = "//span[@class='submenu_tree'][contains(.,'Eight Disciplines')]")
+	WebElement eightDisciplinesLink;
 	
 	
 
@@ -157,8 +158,16 @@ public class HomePage extends TestBase
 		nonConformityLink.click();
 		Thread.sleep(1000);
 		return new NonConformityPage();
-		
 	}
 	
+	public EightDisciplinesPage clickOnEightDisciplinesLink() throws InterruptedException
+	{
+		Thread.sleep(1900);
+		plantQualitySpan.click();
+		Thread.sleep(1000);
+		eightDisciplinesLink.click();
+		Thread.sleep(1000);
+		return new EightDisciplinesPage();
+	}
 	
 }

@@ -1,15 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [QLM Application Automation Test Suite]">
-  <test name="QLM Audit Test Case2(failed)">
+  <listeners>
+    <listener class-name="com.qlm.qa.extentreportlistner.ExtentReporterNG"/>
+  </listeners>
+  <test name="QLM Application Test Case2(failed)">
     <classes>
-      <class name="com.qlm.qa.testcases.AuditorAuditPageTest">
+      <class name="com.qlm.qa.testcases.AuditTemplateCreatePageTest">
         <methods>
-          <include name="validateAuditorAuditResponseSubmitTest"/>
           <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="createAuditTemplateTest"/>
+          <include name="validateAuditTemplateCreatePageTitleTest"/>
         </methods>
-      </class> <!-- com.qlm.qa.testcases.AuditorAuditPageTest -->
+      </class> <!-- com.qlm.qa.testcases.AuditTemplateCreatePageTest -->
     </classes>
-  </test> <!-- QLM Audit Test Case2(failed) -->
+  </test> <!-- QLM Application Test Case2(failed) -->
+  <test name="QLM Application Test Case3(failed)">
+    <classes>
+      <class name="com.qlm.qa.testcases.AuditTemplateAmendPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="validateSubmitAuditTemplateTest"/>
+        </methods>
+      </class> <!-- com.qlm.qa.testcases.AuditTemplateAmendPageTest -->
+    </classes>
+  </test> <!-- QLM Application Test Case3(failed) -->
 </suite> <!-- Failed suite [QLM Application Automation Test Suite] -->

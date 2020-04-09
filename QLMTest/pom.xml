@@ -75,6 +75,7 @@
             <artifactId>jcabi-log</artifactId>
             <version>0.17.1</version>
      </dependency>
+     
   </dependencies>
 
   <build>
