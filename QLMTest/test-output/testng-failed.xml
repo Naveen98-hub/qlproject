@@ -3,19 +3,8 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [QLM Application Automation Test Suite]">
   <listeners>
     <listener class-name="com.qlm.qa.extentreportlistner.ExtentReporterNG"/>
+    <listener class-name="Analyzer.RetryTransformer"/>
   </listeners>
-  <test name="QLM Application Test Case2(failed)">
-    <classes>
-      <class name="com.qlm.qa.testcases.AuditTemplateCreatePageTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="createAuditTemplateTest"/>
-          <include name="validateAuditTemplateCreatePageTitleTest"/>
-        </methods>
-      </class> <!-- com.qlm.qa.testcases.AuditTemplateCreatePageTest -->
-    </classes>
-  </test> <!-- QLM Application Test Case2(failed) -->
   <test name="QLM Application Test Case3(failed)">
     <classes>
       <class name="com.qlm.qa.testcases.AuditTemplateAmendPageTest">

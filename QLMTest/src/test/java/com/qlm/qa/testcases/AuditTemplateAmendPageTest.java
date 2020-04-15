@@ -50,11 +50,12 @@ public class AuditTemplateAmendPageTest extends TestBase
 		log.info("********* validateAuditTemplateAmendPageTitleTest Execution Ends *********");
 	}
 	
-	@Test(priority=2)
+	@Test(priority=2)// retryAnalyzer= Analyzer.RetryAnalyzer.class
 	public void validateSubmitAuditTemplateTest() throws InterruptedException
 	{
 		log.info("********* validateSubmitAuditTemplateTest Execution Started *********");
-		audittemplateamendpage.submitAuditTemplate();
+		Assert.assertEquals(false, true);
+		//audittemplateamendpage.submitAuditTemplate();
 		log.info("********* validateSubmitAuditTemplateTest Execution Ends *********");
 	}
 	

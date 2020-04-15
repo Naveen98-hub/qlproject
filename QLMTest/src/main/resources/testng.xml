@@ -4,18 +4,10 @@
 
     <listeners>
 		<listener class-name="com.qlm.qa.extentreportlistner.ExtentReporterNG" />
+		<listener class-name="Analyzer.RetryTransformer" />
 	</listeners>
 
-  <test name="QLM Application Test Case1">  
-    <classes>  
-      <class name="com.qlm.qa.testcases.AuditTemplateIndexPageTest"/> 
-    </classes>
-  </test>  
-  <test name="QLM Application Test Case2">  
-    <classes>  
-      <class name="com.qlm.qa.testcases.AuditTemplateCreatePageTest"/> 
-    </classes>
-  </test>   
+ 
     <test name="QLM Application Test Case3">  
     <classes>  
       <class name="com.qlm.qa.testcases.AuditTemplateAmendPageTest"/> 
