@@ -5,15 +5,18 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.qlm.qa.base.TestBase;
+import com.qlm.qa.listener.CustomListener;
 import com.qlm.qa.pages.APQPProjectCreatePage;
 import com.qlm.qa.pages.APQPProjectManagementPage;
 import com.qlm.qa.pages.HomePage;
 import com.qlm.qa.pages.LoginPage;
 import com.qlm.qa.util.TestUtil;
 
+@Listeners(CustomListener.class)
 public class APQPProjectCreatePageTest extends TestBase
 {
 	LoginPage loginpage;
@@ -23,7 +26,7 @@ public class APQPProjectCreatePageTest extends TestBase
 	
 	String sheetName="APQPCreateData";
 	
-	Logger log = Logger.getLogger(APQPProjectManagementPageTest.class);
+	Logger log = Logger.getLogger(APQPProjectCreatePageTest.class);
 	
 	public APQPProjectCreatePageTest()
 	{

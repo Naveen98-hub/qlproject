@@ -4,15 +4,18 @@ import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.qlm.qa.base.TestBase;
+import com.qlm.qa.listener.CustomListener;
 import com.qlm.qa.pages.EightDisciplineCreatePage;
 import com.qlm.qa.pages.HomePage;
 import com.qlm.qa.pages.LoginPage;
 import com.qlm.qa.pages.NonConformityPage;
 import com.qlm.qa.pages.NonConformityViewPage;
 
+@Listeners(CustomListener.class)
 public class EightDisciplineCreatePageTest extends TestBase
 {
 	LoginPage loginpage;
@@ -21,7 +24,7 @@ public class EightDisciplineCreatePageTest extends TestBase
 	NonConformityViewPage nonconformityviewpage;
 	EightDisciplineCreatePage eightdisciplinecreatepage;
 	
-	Logger log = Logger.getLogger(AuditTemplateIndexPageTest.class);
+	Logger log = Logger.getLogger(EightDisciplineCreatePageTest.class);
 	
 	public EightDisciplineCreatePageTest()
 	{

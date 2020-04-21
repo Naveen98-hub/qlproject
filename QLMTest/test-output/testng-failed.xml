@@ -3,7 +3,7 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [QLM Application Automation Test Suite]">
   <listeners>
     <listener class-name="com.qlm.qa.extentreportlistner.ExtentReporterNG"/>
-    <listener class-name="Analyzer.RetryTransformer"/>
+    <listener class-name="com.qlm.qa.analyzer.RetryTransformer"/>
   </listeners>
   <test name="QLM Application Test Case3(failed)">
     <classes>

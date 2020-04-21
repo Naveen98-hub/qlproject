@@ -2,28 +2,28 @@
 <testng-results skipped="1" failed="1" ignored="0" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="QLM Application Automation Test Suite" duration-ms="231196" started-at="2020-04-15T14:44:49Z" finished-at="2020-04-15T14:48:41Z">
+  <suite name="QLM Application Automation Test Suite" duration-ms="193817" started-at="2020-04-21T11:08:52Z" finished-at="2020-04-21T11:12:06Z">
     <groups>
     </groups>
-    <test name="QLM Application Test Case3" duration-ms="231196" started-at="2020-04-15T14:44:49Z" finished-at="2020-04-15T14:48:41Z">
+    <test name="QLM Application Test Case3" duration-ms="193817" started-at="2020-04-21T11:08:52Z" finished-at="2020-04-21T11:12:06Z">
       <class name="com.qlm.qa.testcases.AuditTemplateAmendPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qlm.qa.testcases.AuditTemplateAmendPageTest@1dfe2924]" name="setUp" is-config="true" duration-ms="79787" started-at="2020-04-15T20:14:49Z" finished-at="2020-04-15T20:16:09Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qlm.qa.testcases.AuditTemplateAmendPageTest@50b494a6]" name="setUp" is-config="true" duration-ms="68352" started-at="2020-04-21T16:38:52Z" finished-at="2020-04-21T16:40:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateAuditTemplateAmendPageTitleTest()[pri:1, instance:com.qlm.qa.testcases.AuditTemplateAmendPageTest@1dfe2924]" name="validateAuditTemplateAmendPageTitleTest" duration-ms="18" started-at="2020-04-15T20:16:09Z" finished-at="2020-04-15T20:16:09Z">
+        <test-method status="PASS" signature="validateAuditTemplateAmendPageTitleTest()[pri:1, instance:com.qlm.qa.testcases.AuditTemplateAmendPageTest@50b494a6]" name="validateAuditTemplateAmendPageTitleTest" duration-ms="20" started-at="2020-04-21T16:40:00Z" finished-at="2020-04-21T16:40:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateAuditTemplateAmendPageTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qlm.qa.testcases.AuditTemplateAmendPageTest@1dfe2924]" name="tearDown" is-config="true" duration-ms="1086" started-at="2020-04-15T20:16:09Z" finished-at="2020-04-15T20:16:10Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qlm.qa.testcases.AuditTemplateAmendPageTest@50b494a6]" name="tearDown" is-config="true" duration-ms="1003" started-at="2020-04-21T16:40:00Z" finished-at="2020-04-21T16:40:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qlm.qa.testcases.AuditTemplateAmendPageTest@1dfe2924]" name="setUp" is-config="true" duration-ms="86701" started-at="2020-04-15T20:16:10Z" finished-at="2020-04-15T20:17:37Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qlm.qa.testcases.AuditTemplateAmendPageTest@50b494a6]" name="setUp" is-config="true" duration-ms="56775" started-at="2020-04-21T16:40:01Z" finished-at="2020-04-21T16:40:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="validateSubmitAuditTemplateTest()[pri:2, instance:com.qlm.qa.testcases.AuditTemplateAmendPageTest@1dfe2924]" name="validateSubmitAuditTemplateTest" duration-ms="5" started-at="2020-04-15T20:17:37Z" finished-at="2020-04-15T20:17:37Z">
+        <test-method status="SKIP" signature="validateSubmitAuditTemplateTest()[pri:2, instance:com.qlm.qa.testcases.AuditTemplateAmendPageTest@50b494a6]" name="validateSubmitAuditTemplateTest" duration-ms="3" started-at="2020-04-21T16:40:58Z" finished-at="2020-04-21T16:40:58Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -36,7 +36,7 @@
 	at org.testng.Assert.assertEquals(Assert.java:115)
 	at org.testng.Assert.assertEquals(Assert.java:304)
 	at org.testng.Assert.assertEquals(Assert.java:314)
-	at com.qlm.qa.testcases.AuditTemplateAmendPageTest.validateSubmitAuditTemplateTest(AuditTemplateAmendPageTest.java:57)
+	at com.qlm.qa.testcases.AuditTemplateAmendPageTest.validateSubmitAuditTemplateTest(AuditTemplateAmendPageTest.java:60)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -68,15 +68,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateSubmitAuditTemplateTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qlm.qa.testcases.AuditTemplateAmendPageTest@1dfe2924]" name="tearDown" is-config="true" duration-ms="930" started-at="2020-04-15T20:17:37Z" finished-at="2020-04-15T20:17:38Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qlm.qa.testcases.AuditTemplateAmendPageTest@50b494a6]" name="tearDown" is-config="true" duration-ms="919" started-at="2020-04-21T16:40:58Z" finished-at="2020-04-21T16:40:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qlm.qa.testcases.AuditTemplateAmendPageTest@1dfe2924]" name="setUp" is-config="true" duration-ms="61381" started-at="2020-04-15T20:17:38Z" finished-at="2020-04-15T20:18:39Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qlm.qa.testcases.AuditTemplateAmendPageTest@50b494a6]" name="setUp" is-config="true" duration-ms="64082" started-at="2020-04-21T16:40:59Z" finished-at="2020-04-21T16:42:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="validateSubmitAuditTemplateTest()[pri:2, instance:com.qlm.qa.testcases.AuditTemplateAmendPageTest@1dfe2924]" name="validateSubmitAuditTemplateTest" duration-ms="2" started-at="2020-04-15T20:18:39Z" finished-at="2020-04-15T20:18:39Z">
+        <test-method status="FAIL" signature="validateSubmitAuditTemplateTest()[pri:2, instance:com.qlm.qa.testcases.AuditTemplateAmendPageTest@50b494a6]" name="validateSubmitAuditTemplateTest" duration-ms="1" started-at="2020-04-21T16:42:03Z" finished-at="2020-04-21T16:42:03Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -89,7 +89,7 @@
 	at org.testng.Assert.assertEquals(Assert.java:115)
 	at org.testng.Assert.assertEquals(Assert.java:304)
 	at org.testng.Assert.assertEquals(Assert.java:314)
-	at com.qlm.qa.testcases.AuditTemplateAmendPageTest.validateSubmitAuditTemplateTest(AuditTemplateAmendPageTest.java:57)
+	at com.qlm.qa.testcases.AuditTemplateAmendPageTest.validateSubmitAuditTemplateTest(AuditTemplateAmendPageTest.java:60)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -121,7 +121,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateSubmitAuditTemplateTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qlm.qa.testcases.AuditTemplateAmendPageTest@1dfe2924]" name="tearDown" is-config="true" duration-ms="1259" started-at="2020-04-15T20:18:39Z" finished-at="2020-04-15T20:18:41Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qlm.qa.testcases.AuditTemplateAmendPageTest@50b494a6]" name="tearDown" is-config="true" duration-ms="2235" started-at="2020-04-21T16:42:03Z" finished-at="2020-04-21T16:42:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

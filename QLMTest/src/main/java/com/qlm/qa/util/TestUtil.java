@@ -5,15 +5,19 @@ import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
@@ -106,7 +110,16 @@ public class TestUtil extends TestBase
 	
 	 }
 
-
+    public static void failed(String testMethodName)
+    {
+    	File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+    	try {
+			FileUtils.copyFile(srcFile, new File("C:/Users/nk4.RGBSIGTC/git/qlproject/QLMTest/screenshots/"+testMethodName+"_"+".jpg"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    }
 	
 	
 	

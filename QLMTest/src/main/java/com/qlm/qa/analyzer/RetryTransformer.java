@@ -1,4 +1,4 @@
-package Analyzer;
+package com.qlm.qa.analyzer;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
@@ -13,5 +13,3 @@ public class RetryTransformer implements IAnnotationTransformer
 		annotation.setRetryAnalyzer(RetryAnalyzer.class);
 	}
 }
-
-

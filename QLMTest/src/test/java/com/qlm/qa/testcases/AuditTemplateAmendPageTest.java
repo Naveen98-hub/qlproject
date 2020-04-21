@@ -4,15 +4,18 @@ import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.qlm.qa.base.TestBase;
+import com.qlm.qa.listener.CustomListener;
 import com.qlm.qa.pages.AuditTemplateAmendPage;
 import com.qlm.qa.pages.AuditTemplateCreatePage;
 import com.qlm.qa.pages.AuditTemplateIndexPage;
 import com.qlm.qa.pages.HomePage;
 import com.qlm.qa.pages.LoginPage;
 
+@Listeners(CustomListener.class)
 public class AuditTemplateAmendPageTest extends TestBase
 {
 	LoginPage loginpage;
@@ -21,7 +24,7 @@ public class AuditTemplateAmendPageTest extends TestBase
 	AuditTemplateCreatePage audittemplatecreatepage;
 	AuditTemplateAmendPage audittemplateamendpage;
 	
-	Logger log = Logger.getLogger(AuditTemplateIndexPageTest.class);
+	Logger log = Logger.getLogger(AuditTemplateAmendPageTest.class);
 	
 	public AuditTemplateAmendPageTest()
 	{
@@ -54,8 +57,8 @@ public class AuditTemplateAmendPageTest extends TestBase
 	public void validateSubmitAuditTemplateTest() throws InterruptedException
 	{
 		log.info("********* validateSubmitAuditTemplateTest Execution Started *********");
-		Assert.assertEquals(false, true);
-		//audittemplateamendpage.submitAuditTemplate();
+		//Assert.assertEquals(false, true);
+		audittemplateamendpage.submitAuditTemplate();
 		log.info("********* validateSubmitAuditTemplateTest Execution Ends *********");
 	}
 	

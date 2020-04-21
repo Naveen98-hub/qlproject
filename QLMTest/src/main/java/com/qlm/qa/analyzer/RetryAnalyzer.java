@@ -1,4 +1,4 @@
-package Analyzer;
+package com.qlm.qa.analyzer;
 
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
