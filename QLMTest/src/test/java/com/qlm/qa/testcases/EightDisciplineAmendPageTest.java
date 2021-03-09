@@ -102,10 +102,6 @@ public class EightDisciplineAmendPageTest extends TestBase
 	
 	
 	
-	
-	
-	
-	
 	@AfterMethod
 	public void tearDown()
 	{

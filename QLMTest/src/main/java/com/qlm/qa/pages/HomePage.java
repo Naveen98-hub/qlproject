@@ -17,7 +17,7 @@ public class HomePage extends TestBase
     @FindBy(xpath="//a[contains(text(),'Norman Hemmings(admin)')]")
     WebElement userNameLable;
     
-	@FindBy(xpath="//a[@title='Navigate to PPAP Workflow Template']")
+	@FindBy(xpath="//a[@title='Click this link for PPAP Template']")
 	WebElement ppapTempleteLink;
 	
 	@FindBy(xpath="//a[@title='Navigate to PPAP Workflow']")

@@ -1,42 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="1" ignored="0" total="3" passed="1">
+<testng-results skipped="1" failed="1" ignored="0" total="7" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="QLM Application Automation Test Suite" duration-ms="193817" started-at="2020-04-21T11:08:52Z" finished-at="2020-04-21T11:12:06Z">
+  <suite name="QLM Application Automation Test Suite" duration-ms="398179" started-at="2021-03-08T09:41:41Z" finished-at="2021-03-08T09:48:19Z">
     <groups>
     </groups>
-    <test name="QLM Application Test Case3" duration-ms="193817" started-at="2020-04-21T11:08:52Z" finished-at="2020-04-21T11:12:06Z">
-      <class name="com.qlm.qa.testcases.AuditTemplateAmendPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qlm.qa.testcases.AuditTemplateAmendPageTest@50b494a6]" name="setUp" is-config="true" duration-ms="68352" started-at="2020-04-21T16:38:52Z" finished-at="2020-04-21T16:40:00Z">
+    <test name="QLM Application Test Case3" duration-ms="398179" started-at="2021-03-08T09:41:41Z" finished-at="2021-03-08T09:48:19Z">
+      <class name="com.qlm.qa.testcases.HomePageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qlm.qa.testcases.HomePageTest@32709393]" name="setup" is-config="true" duration-ms="33964" started-at="2021-03-08T15:11:58Z" finished-at="2021-03-08T15:12:32Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateAuditTemplateAmendPageTitleTest()[pri:1, instance:com.qlm.qa.testcases.AuditTemplateAmendPageTest@50b494a6]" name="validateAuditTemplateAmendPageTitleTest" duration-ms="20" started-at="2020-04-21T16:40:00Z" finished-at="2020-04-21T16:40:00Z">
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="homePageTitleTest()[pri:1, instance:com.qlm.qa.testcases.HomePageTest@32709393]" name="homePageTitleTest" duration-ms="15" started-at="2021-03-08T15:12:32Z" finished-at="2021-03-08T15:12:32Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateAuditTemplateAmendPageTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qlm.qa.testcases.AuditTemplateAmendPageTest@50b494a6]" name="tearDown" is-config="true" duration-ms="1003" started-at="2020-04-21T16:40:00Z" finished-at="2020-04-21T16:40:01Z">
+        </test-method> <!-- homePageTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qlm.qa.testcases.HomePageTest@32709393]" name="tearDown" is-config="true" duration-ms="1516" started-at="2021-03-08T15:12:32Z" finished-at="2021-03-08T15:12:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qlm.qa.testcases.AuditTemplateAmendPageTest@50b494a6]" name="setUp" is-config="true" duration-ms="56775" started-at="2020-04-21T16:40:01Z" finished-at="2020-04-21T16:40:58Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qlm.qa.testcases.HomePageTest@32709393]" name="setup" is-config="true" duration-ms="32838" started-at="2021-03-08T15:12:49Z" finished-at="2021-03-08T15:13:22Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="validateSubmitAuditTemplateTest()[pri:2, instance:com.qlm.qa.testcases.AuditTemplateAmendPageTest@50b494a6]" name="validateSubmitAuditTemplateTest" duration-ms="3" started-at="2020-04-21T16:40:58Z" finished-at="2020-04-21T16:40:58Z">
-          <exception class="java.lang.AssertionError">
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyUserNameTest()[pri:2, instance:com.qlm.qa.testcases.HomePageTest@32709393]" name="verifyUserNameTest" duration-ms="64" started-at="2021-03-08T15:13:22Z" finished-at="2021-03-08T15:13:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserNameTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qlm.qa.testcases.HomePageTest@32709393]" name="tearDown" is-config="true" duration-ms="1173" started-at="2021-03-08T15:13:22Z" finished-at="2021-03-08T15:13:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qlm.qa.testcases.HomePageTest@32709393]" name="setup" is-config="true" duration-ms="35460" started-at="2021-03-08T15:13:57Z" finished-at="2021-03-08T15:14:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="clickOnPPAPTemplateTest()[pri:3, instance:com.qlm.qa.testcases.HomePageTest@32709393]" name="clickOnPPAPTemplateTest" duration-ms="62480" started-at="2021-03-08T15:14:32Z" finished-at="2021-03-08T15:15:35Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title='Click this link for PPAP Template']"}
+  (Session info: chrome=88.0.4324.190)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.19042 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'IN-GTC-1402', ip: '10.0.70.99', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:51461}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5), userDataDir=C:\Users\NK4~1.RGB\AppData\Local\Temp\scoped_dir13416_29196}, takesHeapSnapshot=true, unhandledPromptBehavior=, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=88.0.4324.190, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 51e208e9ce81d571ad546d2a7177ec8f
+*** Element info: {Using=xpath, value=//a[@title='Click this link for PPAP Template']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
-	at org.testng.Assert.assertEquals(Assert.java:115)
-	at org.testng.Assert.assertEquals(Assert.java:304)
-	at org.testng.Assert.assertEquals(Assert.java:314)
-	at com.qlm.qa.testcases.AuditTemplateAmendPageTest.validateSubmitAuditTemplateTest(AuditTemplateAmendPageTest.java:60)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title='Click this link for PPAP Template']"}
+  (Session info: chrome=88.0.4324.190)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.19042 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'IN-GTC-1402', ip: '10.0.70.99', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:51461}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5), userDataDir=C:\Users\NK4~1.RGB\AppData\Local\Temp\scoped_dir13416_29196}, takesHeapSnapshot=true, unhandledPromptBehavior=, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=88.0.4324.190, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 51e208e9ce81d571ad546d2a7177ec8f
+*** Element info: {Using=xpath, value=//a[@title='Click this link for PPAP Template']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at com.qlm.qa.pages.HomePage.clickOnPPAPTemplete(HomePage.java:86)
+	at com.qlm.qa.testcases.HomePageTest.clickOnPPAPTemplateTest(HomePageTest.java:62)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -64,32 +110,66 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateSubmitAuditTemplateTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qlm.qa.testcases.AuditTemplateAmendPageTest@50b494a6]" name="tearDown" is-config="true" duration-ms="919" started-at="2020-04-21T16:40:58Z" finished-at="2020-04-21T16:40:59Z">
+        </test-method> <!-- clickOnPPAPTemplateTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qlm.qa.testcases.HomePageTest@32709393]" name="tearDown" is-config="true" duration-ms="975" started-at="2021-03-08T15:15:35Z" finished-at="2021-03-08T15:15:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qlm.qa.testcases.AuditTemplateAmendPageTest@50b494a6]" name="setUp" is-config="true" duration-ms="64082" started-at="2020-04-21T16:40:59Z" finished-at="2020-04-21T16:42:03Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qlm.qa.testcases.HomePageTest@32709393]" name="setup" is-config="true" duration-ms="31975" started-at="2021-03-08T15:15:36Z" finished-at="2021-03-08T15:16:08Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="validateSubmitAuditTemplateTest()[pri:2, instance:com.qlm.qa.testcases.AuditTemplateAmendPageTest@50b494a6]" name="validateSubmitAuditTemplateTest" duration-ms="1" started-at="2020-04-21T16:42:03Z" finished-at="2020-04-21T16:42:03Z">
-          <exception class="java.lang.AssertionError">
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="clickOnPPAPTemplateTest()[pri:3, instance:com.qlm.qa.testcases.HomePageTest@32709393]" name="clickOnPPAPTemplateTest" duration-ms="62397" started-at="2021-03-08T15:16:08Z" finished-at="2021-03-08T15:17:10Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title='Click this link for PPAP Template']"}
+  (Session info: chrome=88.0.4324.190)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.19042 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'IN-GTC-1402', ip: '10.0.70.99', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:51543}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5), userDataDir=C:\Users\NK4~1.RGB\AppData\Local\Temp\scoped_dir12604_14007}, takesHeapSnapshot=true, unhandledPromptBehavior=, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=88.0.4324.190, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 489522d1e3f8cd60ed482d94da058cb5
+*** Element info: {Using=xpath, value=//a[@title='Click this link for PPAP Template']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
-	at org.testng.Assert.assertEquals(Assert.java:115)
-	at org.testng.Assert.assertEquals(Assert.java:304)
-	at org.testng.Assert.assertEquals(Assert.java:314)
-	at com.qlm.qa.testcases.AuditTemplateAmendPageTest.validateSubmitAuditTemplateTest(AuditTemplateAmendPageTest.java:60)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title='Click this link for PPAP Template']"}
+  (Session info: chrome=88.0.4324.190)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.19042 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'IN-GTC-1402', ip: '10.0.70.99', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:51543}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5), userDataDir=C:\Users\NK4~1.RGB\AppData\Local\Temp\scoped_dir12604_14007}, takesHeapSnapshot=true, unhandledPromptBehavior=, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=88.0.4324.190, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 489522d1e3f8cd60ed482d94da058cb5
+*** Element info: {Using=xpath, value=//a[@title='Click this link for PPAP Template']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at com.qlm.qa.pages.HomePage.clickOnPPAPTemplete(HomePage.java:86)
+	at com.qlm.qa.testcases.HomePageTest.clickOnPPAPTemplateTest(HomePageTest.java:62)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -117,15 +197,53 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateSubmitAuditTemplateTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qlm.qa.testcases.AuditTemplateAmendPageTest@50b494a6]" name="tearDown" is-config="true" duration-ms="2235" started-at="2020-04-21T16:42:03Z" finished-at="2020-04-21T16:42:06Z">
+        </test-method> <!-- clickOnPPAPTemplateTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qlm.qa.testcases.HomePageTest@32709393]" name="tearDown" is-config="true" duration-ms="1389" started-at="2021-03-08T15:18:18Z" finished-at="2021-03-08T15:18:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.qlm.qa.testcases.AuditTemplateAmendPageTest -->
+      </class> <!-- com.qlm.qa.testcases.HomePageTest -->
+      <class name="com.qlm.qa.testcases.LoginPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qlm.qa.testcases.LoginPageTest@3cef309d]" name="setup" is-config="true" duration-ms="15637" started-at="2021-03-08T15:11:41Z" finished-at="2021-03-08T15:11:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginPageTitleTest()[pri:1, instance:com.qlm.qa.testcases.LoginPageTest@3cef309d]" name="loginPageTitleTest" duration-ms="35" started-at="2021-03-08T15:11:57Z" finished-at="2021-03-08T15:11:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qlm.qa.testcases.LoginPageTest@3cef309d]" name="tearDown" is-config="true" duration-ms="1145" started-at="2021-03-08T15:11:57Z" finished-at="2021-03-08T15:11:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qlm.qa.testcases.LoginPageTest@3cef309d]" name="setup" is-config="true" duration-ms="14379" started-at="2021-03-08T15:12:33Z" finished-at="2021-03-08T15:12:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="empowerLogoTest()[pri:2, instance:com.qlm.qa.testcases.LoginPageTest@3cef309d]" name="empowerLogoTest" duration-ms="64" started-at="2021-03-08T15:12:48Z" finished-at="2021-03-08T15:12:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- empowerLogoTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qlm.qa.testcases.LoginPageTest@3cef309d]" name="tearDown" is-config="true" duration-ms="959" started-at="2021-03-08T15:12:48Z" finished-at="2021-03-08T15:12:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qlm.qa.testcases.LoginPageTest@3cef309d]" name="setup" is-config="true" duration-ms="14799" started-at="2021-03-08T15:13:23Z" finished-at="2021-03-08T15:13:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginTest()[pri:3, instance:com.qlm.qa.testcases.LoginPageTest@3cef309d]" name="loginTest" duration-ms="17835" started-at="2021-03-08T15:13:38Z" finished-at="2021-03-08T15:13:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qlm.qa.testcases.LoginPageTest@3cef309d]" name="tearDown" is-config="true" duration-ms="1432" started-at="2021-03-08T15:13:55Z" finished-at="2021-03-08T15:13:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qlm.qa.testcases.LoginPageTest -->
     </test> <!-- QLM Application Test Case3 -->
   </suite> <!-- QLM Application Automation Test Suite -->
 </testng-results>

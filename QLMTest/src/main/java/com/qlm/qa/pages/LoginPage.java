@@ -22,7 +22,7 @@ public class LoginPage extends TestBase
 	@FindBy(id="txtInput") 
 	WebElement captchainput;
 	
-	@FindBy(xpath="//img[@class='img-responsive center-block']")
+	@FindBy(xpath="//img[@class='img-responsive login_imglogo']")
 	WebElement logoimg;
 	
 	@FindBy(id="btn-login")

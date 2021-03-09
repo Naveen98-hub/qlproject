@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.qlm.qa.testcases.AuditTemplateAmendPageTest">
+      <class name="com.qlm.qa.testcases.LoginPageTest">
         <methods>
-          <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="validateSubmitAuditTemplateTest"/>
+          <include name="setup"/>
+          <include name="empowerLogoTest"/>
         </methods>
-      </class> <!-- com.qlm.qa.testcases.AuditTemplateAmendPageTest -->
+      </class> <!-- com.qlm.qa.testcases.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

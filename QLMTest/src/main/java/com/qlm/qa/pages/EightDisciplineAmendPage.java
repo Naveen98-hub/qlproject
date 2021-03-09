@@ -117,7 +117,33 @@ public class EightDisciplineAmendPage extends TestBase
     @FindBy(xpath = "//a[contains(.,'Add as Root Cause?')]")
     WebElement addAsRootCause;
     
-	
+	//D5
+    
+    @FindBy(xpath="//textarea[@id='action_Action']")
+    WebElement txtSelectVerificationAction;
+    
+    @FindBy(xpath = "//div[@class='k-widget k-multiselect k-header form-control k-state-hover']"
+                    +"[contains(.,'TestCauseSelect Root Cause...')]")
+    WebElement drpdnRootCause;
+    
+    @FindBy(xpath="//input[@id='target-date-1']")
+    WebElement txtTargetDate;
+    
+    @FindBy(xpath="(//a[contains(text(),'27')])[1]")
+    WebElement dateTargetDate;
+    
+    @FindBy(xpath = "(//div[contains(@class,'k-multiselect-wrap k-floatwrap')])[2]")
+    WebElement drpdnResponsibility;
+    
+    @FindBy(xpath = "//h3[contains(.,'Naveen Naveen')]")
+    WebElement responsibilityUser;
+    
+    @FindBy(xpath = "//textarea[contains(@id,'action_PermanetCorrectiveAction')]")
+    WebElement permanentCorrectiveAction;
+    
+    
+    
+    
 	//Actions
 	
 	Actions act = new Actions(driver);
@@ -270,6 +296,14 @@ public class EightDisciplineAmendPage extends TestBase
 		Thread.sleep(1500);
 	}
 	
-	
+	public void D5SupplierSubmit() throws InterruptedException
+	{
+		Thread.sleep(1000);
+		txtSelectVerificationAction.sendKeys("Test");
+		Thread.sleep(1000);
+		
+		
+		
+	}
 	
 }

@@ -6,11 +6,11 @@
 		<listener class-name="com.qlm.qa.extentreportlistner.ExtentReporterNG" />
 		<listener class-name="com.qlm.qa.analyzer.RetryTransformer" />
 	</listeners>
-
  
     <test name="QLM Application Test Case3">  
     <classes>  
-      <class name="com.qlm.qa.testcases.AuditTemplateAmendPageTest"/> 
+      <class name="com.qlm.qa.testcases.LoginPageTest"/> 
+       <class name="com.qlm.qa.testcases.HomePageTest"/> 
     </classes>
   </test>   
 </suite>  

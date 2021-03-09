@@ -7,13 +7,13 @@
   </listeners>
   <test name="QLM Application Test Case3(failed)">
     <classes>
-      <class name="com.qlm.qa.testcases.AuditTemplateAmendPageTest">
+      <class name="com.qlm.qa.testcases.HomePageTest">
         <methods>
-          <include name="setUp"/>
+          <include name="setup"/>
+          <include name="clickOnPPAPTemplateTest"/>
           <include name="tearDown"/>
-          <include name="validateSubmitAuditTemplateTest"/>
         </methods>
-      </class> <!-- com.qlm.qa.testcases.AuditTemplateAmendPageTest -->
+      </class> <!-- com.qlm.qa.testcases.HomePageTest -->
     </classes>
   </test> <!-- QLM Application Test Case3(failed) -->
 </suite> <!-- Failed suite [QLM Application Automation Test Suite] -->
